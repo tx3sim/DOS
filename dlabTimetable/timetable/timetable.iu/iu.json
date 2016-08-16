@@ -1,0 +1,77 @@
+{
+  "c_" : "IUProject",
+  "_buildPort" : 21683,
+  "viewPorts" : [
+    960
+  ],
+  "_pageGroup" : {
+    "c_" : "IUSheetGroup",
+    "name" : "pages",
+    "_children" : [
+      {
+        "c_" : "IUPage",
+        "file_" : "index-F3F880D2-E8AA-447F-A386-A044CEC20EBF.json",
+        "m_" : "F3F880D2-E8AA-447F-A386-A044CEC20EBF"
+      }
+    ]
+  },
+  "_classGroup" : {
+    "c_" : "IUSheetGroup",
+    "name" : "compositions",
+    "_children" : [
+      {
+        "c_" : "IUClass",
+        "file_" : "header-F2B1EE27-E1BC-4FC6-9341-C6A40C18DF25.json",
+        "m_" : "F2B1EE27-E1BC-4FC6-9341-C6A40C18DF25"
+      },
+      {
+        "c_" : "IUClass",
+        "file_" : "footer-3D82CF87-14DF-47C7-A3BC-91A42B56FE4C.json",
+        "m_" : "3D82CF87-14DF-47C7-A3BC-91A42B56FE4C"
+      },
+      {
+        "c_" : "IUClass",
+        "file_" : "sidebar-5CEBF22A-9F49-48D4-9CFE-91507A54F484.json",
+        "m_" : "5CEBF22A-9F49-48D4-9CFE-91507A54F484"
+      },
+      {
+        "c_" : "IUClass",
+        "file_" : "composition-D9BE9FF8-FE03-4060-BA74-21EAD412245D.json",
+        "m_" : "D9BE9FF8-FE03-4060-BA74-21EAD412245D"
+      }
+    ]
+  },
+  "_projectType" : 1,
+  "_projectData" : {
+    "c_" : "IUProjectDjangoData",
+    "_djangoBuildPath" : "\/Users\/daddyslab\/Documents\/dlabSemiProject\/semi\/templates",
+    "_djangoBuildPathForResource" : "\/Users\/daddyslab\/Documents\/dlabSemiProject\/semi\/static\/resource",
+    "_djangoResourcePrefix" : "\/static\/resource"
+  },
+  "_resourcePrefix" : "\/static\/resource",
+  "_buildPath" : "$CurrentFolder\/templates",
+  "_resourceBuildPath" : "$CurrentFolder\/static\/resource",
+  "_linkPrefix" : "",
+  "_sharedResourcePath" : "",
+  "_favicon" : "",
+  "_title" : "",
+  "_favoriteColors" : [
+    {
+      "c_" : "NSColor",
+      "R" : 0.3333333432674408,
+      "G" : 0.6745098233222961,
+      "B" : 0.9333333373069763,
+      "A" : 1
+    },
+    {
+      "c_" : "NSColor",
+      "R" : 0.2313725501298904,
+      "G" : 0.3490196168422699,
+      "B" : 0.5960784554481506,
+      "A" : 1
+    }
+  ],
+  "_documentPath" : "$CurrentFolder\/$AppName_document",
+  "_enableMinWidth" : true,
+  "idPrefix" : ""
+}
