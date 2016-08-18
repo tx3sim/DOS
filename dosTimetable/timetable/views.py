@@ -1,7 +1,7 @@
 from django.core import serializers
 import json
 from django.http import JsonResponse
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 # Create your views here.
 from django.views.decorators.csrf import csrf_exempt
@@ -40,3 +40,10 @@ def getTimetable(request):
     module = request.POST
     moduleName = module.get("moduleName", "0")
     return JsonResponse(serializers.serialize('json', Class.objects.filter(moduleName=moduleName)), safe=False)
+
+#
+# @csrf_exempt
+# def selected(request):
+#     data = request.POST
+#     courseName = data.get("targetCourseName", "0")
+#     className = data.get("targetClassName", "0")

@@ -9,7 +9,7 @@ class Course(models.Model):
         return self.name
 
 
-class classModule(models.Model):
+class ClassModule(models.Model):
     name = models.CharField(max_length=128, null=False, primary_key=True)
     level = models.ForeignKey(Course)
 
@@ -19,7 +19,7 @@ class classModule(models.Model):
 
 class Class(models.Model):
     id = models.AutoField(primary_key=True)
-    moduleName = models.ForeignKey(classModule)
+    moduleName = models.ForeignKey(ClassModule)
     className = models.CharField(max_length=128)
     classCode = models.CharField(max_length=128)
     stdMax = models.IntegerField

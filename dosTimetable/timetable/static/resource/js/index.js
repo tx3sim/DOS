@@ -8,6 +8,7 @@ $(document).ready(function () {
     var IMP = window.IMP;
     IMP.init('iamport'); // iamport -> 가맹점식별코드
 
+
     $('.tab').click(function () {
         var moduleText = $(this).find('p').html();
         var module = {moduleName: moduleText};
@@ -26,32 +27,32 @@ $(document).ready(function () {
                 }
 
                 $('td div a').click(function () {
-                    var selectClass = $(this).html();
-                    var courseSelect = "";
-                    console.log(selectClass[1]);
-                    if(selectClass[1] == 'M')
-                        courseSelect = "Maker";
-                    else if(selectClass[1] == "C")
-                        courseSelect = "Creator";
-                    else
-                        courseSelect = "Starter";
-                    if ($(this).html() != "") {
-                        console.log($(this).attr('class'));
-                        $('.courseName').val(courseSelect);
-                        $('.className').val($(this).html());
-                        //$('.timeValue').val($(this).attr('class'));
-                        window.open('/pages/payment_1.html', '_blank');
-                    }
-
+                    window.location.href = '/pages/payment_1.html';
+                    // var targetData = {targetClassName: $(this).html(), targetCourseName: ""};
+                    //
+                    // if (targetData.targetClassName[1] == 'M')
+                    //     targetData.targetCourseName = 'Maker';
+                    // else if (targetData.targetClassName[1] == "C")
+                    //     targetData.targetCourseName = 'Creator';
+                    // else
+                    //     targetData.targetCourseName = 'Starter';
+                    //
+                    // $.ajax({
+                    //     url: '/selectedPay',
+                    //     type: "POST",
+                    //     data: targetData,
+                    //     success: function (data) {
+                    //         $('.courseName').val(data.targetCourseName);
+                    //         $('.className').val(data.targetClassName);
+                    //     }
+                    // });
                 });
             }
-        });
 
+        });
     });
 
-
     $('.courseName').change(function () {
-
         if ($(this).val() != '-') {
             $.ajax({
                 url: '/pages/payment_1.html',
@@ -59,7 +60,6 @@ $(document).ready(function () {
                 data: {levelName: $(this).val()},
                 success: function (data) {
                     var classes = JSON.parse(data);
-                    console.log(classes);
                     classSelect.find('option:not(:first)').remove();
                     timeSelect.find('option:not(:first)').remove();
                     for (var i in classes) {

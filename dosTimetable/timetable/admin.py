@@ -4,5 +4,5 @@ from timetable.models import *
 
 
 admin.site.register(Course)
-admin.site.register(classModule)
+admin.site.register(ClassModule)
 admin.site.register(Class)
