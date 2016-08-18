@@ -27,6 +27,7 @@
       </noscript>
     <![endif]-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script type="text/javascript" src="https://service.iamport.kr/js/iamport.payment-1.1.1.js"></script>
   <script src="../static/resource/js/index.js"></script>
   </head>
   <body>
@@ -34,8 +35,10 @@
       <section class="iu-page-content page-content">
         <section class="iu-section section">
           <div class="iu-center-box center-box-10">
-            <div class="iux-popup-button iu-cell btn_apply cell" data-iu-popup-id="popup">
-              <p>신청하기</p>
+            <div class="iu-cell btn_apply cell">
+              <a class="iux-inner-link" href="/pages/payment_1.html" target="_blank">
+                <p>신청하기</p>
+              </a>
             </div>
             <div class="iu-tabview tabview-87" data-iu-show-animation="transition.slideDownIn">
               <div class="iu-tab-header tab-header-88">
@@ -233,39 +236,6 @@
           </div>
         </section>
       </section>
-    </div>
-    <div id="iux-popup-dimcolor" class="iux-popup-dimcolor" style="display:none;"></div>
-    <div id="popup" class="iu-popup popup" data-iu-show-duration="0.40" data-iu-show-animation="top-down">
-      <div class="iu-text text-140">
-        <p>Payment Popup</p>
-      </div>
-      <form class="iu-pg-form classSelectForm pg-form" enctype="multipart/form-data" method="post">
-        <select class="iu-pg-select courseName pg-select" name="CourseSelect">
-          <option value="Default">-</option>
-          <option value="Starter">Starter</option>
-          <option value="Creator">Creator</option>
-          <option value="Maker">Maker</option>
-        </select>
-        <select class="iu-pg-select className pg-select-120" name="ClassSelect">
-          <option value="Default">-</option>
-        </select>
-        <select class="iu-pg-select timeValue pg-select-121" name="TimeSelect">
-          <option value="Default">-</option>
-        </select>
-        <div class="iu-pg-slide paymentSlider pg-slide" data-iu-slide-min-value="0" data-iu-slide-max-value="100" data-iu-slide-default-value="25">
-          <div class="iu-pg-slide-bar pg-slide-bar">
-            <div class=" iux-pg-slidebar-innerbar">
-              <div class="iu-pg-slide-point pg-slide-point">
-                <div class="iux-pg-slidepoint-toucharea"></div>
-              </div>
-            
-            </div>
-          </div>
-          <input class="iu-pg-slide-text-field pg-slide-text-field" name="paymentSlider" type="text" value="25">
-        </div>
-        <input class="iu-pg-button btn_next1 pg-button" type="submit" value="Next">
-      </form>
-      <div class="iux-popup-close-button"></div>
     </div>
   </body>
 </HTML>

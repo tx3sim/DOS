@@ -22,6 +22,6 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', index),
     url(r'^tt$', getTimetable),
-    url(r'^getClass$', getClass),
-    url(r'^getTime$', getTime)
+    url(r'^pages/payment_1.html$', payment_1),
+    url(r'^pages/payment_2.html$', payment_2)
 ]

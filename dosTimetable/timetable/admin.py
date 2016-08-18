@@ -3,7 +3,6 @@ from timetable.models import *
 # Register your models here.
 
 
-admin.site.register(Timetable)
-admin.site.register(ClassLevel)
-admin.site.register(LevelModule)
+admin.site.register(Course)
+admin.site.register(classModule)
 admin.site.register(Class)
