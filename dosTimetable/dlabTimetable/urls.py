@@ -16,7 +16,7 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
-from timetable.views import *
+from semi.views import *
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -24,5 +24,4 @@ urlpatterns = [
     url(r'^tt$', getTimetable),
     url(r'^pages/payment_1.html$', payment_1),
     url(r'^pages/payment_2.html$', payment_2),
-    #url(r'^selectedPay$', selected)
 ]
