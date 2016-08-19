@@ -15,13 +15,14 @@ def index(request):
 
 @csrf_exempt
 def payment_1(request):
+    courseName = 'Starter'
     if request.POST:
-        level = request.POST
-        levelName = level.get("levelName", "0")
-        return JsonResponse(serializers.serialize('json', Class.objects.filter(moduleName__level__name=levelName)),
+        course = request.POST
+        courseName = course.get("levelName", "0")
+        return JsonResponse(serializers.serialize('json', Class.objects.filter(moduleName__level__name=courseName)),
                             safe=False)
     else:
-        return render(request, 'pages/payment_1.html')
+        return render(request, 'pages/payment_1.html', {"courseName": courseName})
 
 
 @csrf_exempt
@@ -41,9 +42,10 @@ def getTimetable(request):
     moduleName = module.get("moduleName", "0")
     return JsonResponse(serializers.serialize('json', Class.objects.filter(moduleName=moduleName)), safe=False)
 
-#
+
 # @csrf_exempt
 # def selected(request):
-#     data = request.POST
+#     data = request.GET
 #     courseName = data.get("targetCourseName", "0")
 #     className = data.get("targetClassName", "0")
+#     return render(request, 'pages/payment_1.html', {"courseName": courseName, "className": className})

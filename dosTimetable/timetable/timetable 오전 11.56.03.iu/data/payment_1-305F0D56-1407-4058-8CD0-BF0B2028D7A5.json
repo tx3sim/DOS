@@ -87,6 +87,7 @@
                     "propertyDictionary" : {
                       "c_" : "IUBackEndDictionary",
                       "djLabel" : "label",
+                      "djSelectedValue" : "courseName",
                       "djValue" : "value"
                     },
                     "labels" : "-;Starter;Creator;Maker",
@@ -97,6 +98,7 @@
                     "c_" : "PGSelect",
                     "htmlID" : "pg-select-120",
                     "themeClass" : "className",
+                    "pgContentVariable" : "courseName",
                     "positionStorages" : {
                       "c_" : "JDMutableArrayDict",
                       "array" : [
@@ -133,6 +135,7 @@
                     "propertyDictionary" : {
                       "c_" : "IUBackEndDictionary",
                       "djLabel" : "label",
+                      "djSelectedValue" : "className",
                       "djValue" : "value"
                     },
                     "labels" : "-",
@@ -178,6 +181,7 @@
                     "propertyDictionary" : {
                       "c_" : "IUBackEndDictionary",
                       "djLabel" : "label",
+                      "djSelectedValue" : "obj.timeCode",
                       "djValue" : "value"
                     },
                     "labels" : "-",

@@ -49,6 +49,7 @@
                 "htmlID" : "cell",
                 "clickType" : 1,
                 "linkBox" : "305F0D56-1407-4058-8CD0-BF0B2028D7A5",
+                "isLinkOpenAtInNewTab" : true,
                 "themeClass" : "btn_apply",
                 "positionStorages" : {
                   "c_" : "JDMutableArrayDict",
@@ -417,6 +418,7 @@
                                 }
                               }
                             ],
+                            "editorHidden" : true,
                             "positionStorages" : {
                               "c_" : "JDMutableArrayDict",
                               "array" : [
@@ -515,7 +517,6 @@
                                 }
                               }
                             ],
-                            "editorHidden" : true,
                             "positionStorages" : {
                               "c_" : "JDMutableArrayDict",
                               "array" : [
