@@ -37,6 +37,7 @@
         <section class="iu-section section">
           <div class="iu-center-box center-box-10">
             <form class="iu-pg-form classSelectForm pg-form" enctype="multipart/form-data" method="post">
+              {{ form.as_p }}
               <select class="iu-pg-select courseName pg-select" name="CourseSelect">
                 <option value="Default">-</option>
                 <option value="Starter">Starter</option>
@@ -49,23 +50,7 @@
               <select class="iu-pg-select timeValue pg-select-121" name="TimeSelect">
                 <option value="Default">-</option>
               </select>
-              <div class="iu-pg-slide paymentSlider pg-slide" data-iu-slide-min-value="0" data-iu-slide-max-value="100" data-iu-slide-default-value="25">
-                <div class="iu-pg-slide-bar pg-slide-bar">
-                  <div class=" iux-pg-slidebar-innerbar">
-                    <div class="iu-pg-slide-point pg-slide-point">
-                      <div class="iux-pg-slidepoint-toucharea"></div>
-                    </div>
-                  
-                  </div>
-                </div>
-                <input class="iu-pg-slide-text-field pg-slide-text-field" name="paymentSlider" type="text" value="25">
-              </div>
             </form>
-            <div class="iu-cell btn_pay_1 cell">
-              <a class="iux-inner-link" href="/pages/payment_2.html" target="_blank">
-                <p>다음</p>
-              </a>
-            </div>
             <div class="iu-cell btn_pay_next cell-19">
               <a class="iux-inner-link" href="/pages/payment_2.html">
                 <p>다음</p>

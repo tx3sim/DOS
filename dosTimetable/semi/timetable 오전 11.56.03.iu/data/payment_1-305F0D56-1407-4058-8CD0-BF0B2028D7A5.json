@@ -61,7 +61,7 @@
                           "horizontalCenter" : true,
                           "xUnit" : 0,
                           "yUnit" : 0,
-                          "top" : 20,
+                          "top" : 511,
                           "left" : 57
                         }
                       ],
@@ -108,7 +108,7 @@
                           "verticalCenter" : false,
                           "xUnit" : 0,
                           "yUnit" : 0,
-                          "top" : 90,
+                          "top" : 438,
                           "left" : 90
                         }
                       ],
@@ -154,7 +154,7 @@
                           "horizontalCenter" : true,
                           "xUnit" : 0,
                           "yUnit" : 0,
-                          "top" : 160,
+                          "top" : 473,
                           "left" : 133
                         }
                       ],
@@ -186,251 +186,10 @@
                     "labels" : "-",
                     "values" : "Default",
                     "inputName" : "TimeSelect"
-                  },
-                  {
-                    "c_" : "PGSlide",
-                    "htmlID" : "pg-slide",
-                    "children" : [
-                      {
-                        "c_" : "PGSlideBar",
-                        "htmlID" : "pg-slide-bar",
-                        "children" : [
-                          {
-                            "c_" : "PGSlidePoint",
-                            "htmlID" : "pg-slide-point",
-                            "positionStorages" : {
-                              "c_" : "JDMutableArrayDict",
-                              "array" : [
-                                {
-                                  "c_" : "IUPositionStorage",
-                                  "position" : 0,
-                                  "secondPosition" : 4,
-                                  "verticalCenter" : true,
-                                  "xUnit" : 0,
-                                  "yUnit" : 0,
-                                  "top" : 0,
-                                  "right" : 0
-                                }
-                              ],
-                              "keys" : [
-                                960
-                              ]
-                            },
-                            "styleStorages" : {
-                              "c_" : "JDMutableArrayDict",
-                              "array" : [
-                                {
-                                  "c_" : "IUStyleStorage",
-                                  "overflowType" : 1,
-                                  "widthUnit" : 0,
-                                  "heightUnit" : 0,
-                                  "width" : 24,
-                                  "height" : 24,
-                                  "bgColor1" : {
-                                    "c_" : "NSColor",
-                                    "R" : 1,
-                                    "G" : 1,
-                                    "B" : 1,
-                                    "A" : 1
-                                  },
-                                  "topBorderColor" : {
-                                    "c_" : "NSColor",
-                                    "R" : 0.7450980544090271,
-                                    "G" : 0.7450980544090271,
-                                    "B" : 0.7450980544090271,
-                                    "A" : 1
-                                  },
-                                  "leftBorderColor" : {
-                                    "c_" : "NSColor",
-                                    "R" : 0.7450980544090271,
-                                    "G" : 0.7450980544090271,
-                                    "B" : 0.7450980544090271,
-                                    "A" : 1
-                                  },
-                                  "rightBorderColor" : {
-                                    "c_" : "NSColor",
-                                    "R" : 0.7450980544090271,
-                                    "G" : 0.7450980544090271,
-                                    "B" : 0.7450980544090271,
-                                    "A" : 1
-                                  },
-                                  "bottomBorderColor" : {
-                                    "c_" : "NSColor",
-                                    "R" : 0.7450980544090271,
-                                    "G" : 0.7450980544090271,
-                                    "B" : 0.7450980544090271,
-                                    "A" : 1
-                                  },
-                                  "topBorderWidth" : 1,
-                                  "leftBorderWidth" : 1,
-                                  "rightBorderWidth" : 1,
-                                  "bottomBorderWidth" : 1,
-                                  "topLeftBorderRadius" : 50,
-                                  "topRightBorderRadius" : 50,
-                                  "bottomLeftborderRadius" : 50,
-                                  "bottomRightBorderRadius" : 50,
-                                  "topLeftBorderRadiusUnit" : 1,
-                                  "topRightBorderRadiusUnit" : 1,
-                                  "bottomLeftborderRadiusUnit" : 1,
-                                  "bottomRightBorderRadiusUnit" : 1,
-                                  "shadowColor" : {
-                                    "c_" : "NSColor",
-                                    "A" : 0.2000000029802322
-                                  }
-                                }
-                              ],
-                              "keys" : [
-                                960
-                              ]
-                            }
-                          }
-                        ],
-                        "positionStorages" : {
-                          "c_" : "JDMutableArrayDict",
-                          "array" : [
-                            {
-                              "c_" : "IUPositionStorage",
-                              "position" : 0,
-                              "verticalCenter" : true,
-                              "xUnit" : 0,
-                              "yUnit" : 0,
-                              "top" : 0,
-                              "left" : 14
-                            }
-                          ],
-                          "keys" : [
-                            960
-                          ]
-                        },
-                        "styleStorages" : {
-                          "c_" : "JDMutableArrayDict",
-                          "array" : [
-                            {
-                              "c_" : "IUStyleStorage",
-                              "overflowType" : 1,
-                              "widthUnit" : 1,
-                              "heightUnit" : 0,
-                              "width" : 75,
-                              "height" : 10,
-                              "bgColor1" : {
-                                "c_" : "NSColor",
-                                "R" : 0.9019607901573181,
-                                "G" : 0.9019607901573181,
-                                "B" : 0.9019607901573181,
-                                "A" : 1
-                              },
-                              "topLeftBorderRadius" : 3,
-                              "topRightBorderRadius" : 3,
-                              "bottomLeftborderRadius" : 3,
-                              "bottomRightBorderRadius" : 3
-                            }
-                          ],
-                          "keys" : [
-                            960
-                          ]
-                        },
-                        "propertyStorages" : {
-                          "c_" : "JDMutableArrayDict",
-                          "array" : [
-                            {
-                              "c_" : "IUPropertyStorage",
-                              "propertyStorage" : {
-                                "InnerColorPropertyKey" : {
-                                  "c_" : "NSColor",
-                                  "R" : 0.4705882370471954,
-                                  "G" : 0.4705882370471954,
-                                  "B" : 0.4705882370471954,
-                                  "A" : 1
-                                }
-                              }
-                            }
-                          ],
-                          "keys" : [
-                            960
-                          ]
-                        }
-                      },
-                      {
-                        "c_" : "PGSlideTextField",
-                        "htmlID" : "pg-slide-text-field",
-                        "positionStorages" : {
-                          "c_" : "JDMutableArrayDict",
-                          "array" : [
-                            {
-                              "c_" : "IUPositionStorage",
-                              "position" : 0,
-                              "verticalCenter" : true,
-                              "xUnit" : 1,
-                              "yUnit" : 0,
-                              "top" : 0,
-                              "left" : 85
-                            }
-                          ],
-                          "keys" : [
-                            960
-                          ]
-                        },
-                        "styleStorages" : {
-                          "c_" : "JDMutableArrayDict",
-                          "array" : [
-                            {
-                              "c_" : "IUStyleStorage",
-                              "widthUnit" : 1,
-                              "heightUnit" : 0,
-                              "width" : 12,
-                              "height" : 20,
-                              "fontSize" : 14,
-                              "fontWeight" : 2,
-                              "fontAlign" : 1
-                            }
-                          ],
-                          "keys" : [
-                            960
-                          ]
-                        }
-                      }
-                    ],
-                    "themeClass" : "paymentSlider",
-                    "positionStorages" : {
-                      "c_" : "JDMutableArrayDict",
-                      "array" : [
-                        {
-                          "c_" : "IUPositionStorage",
-                          "position" : 0,
-                          "horizontalCenter" : true,
-                          "xUnit" : 0,
-                          "yUnit" : 0,
-                          "top" : 380,
-                          "left" : 70
-                        }
-                      ],
-                      "keys" : [
-                        960
-                      ]
-                    },
-                    "styleStorages" : {
-                      "c_" : "JDMutableArrayDict",
-                      "array" : [
-                        {
-                          "c_" : "IUStyleStorage",
-                          "overflowType" : 1,
-                          "widthUnit" : 0,
-                          "heightUnit" : 0,
-                          "width" : 300,
-                          "height" : 40
-                        }
-                      ],
-                      "keys" : [
-                        960
-                      ]
-                    },
-                    "defaultValue" : 25,
-                    "inputName" : "paymentSlider",
-                    "minValue" : 0,
-                    "maxValue" : 100
                   }
                 ],
                 "themeClass" : "classSelectForm",
+                "pgInnerPrefixCode" : "{{ form.as_p }}",
                 "positionStorages" : {
                   "c_" : "JDMutableArrayDict",
                   "array" : [
@@ -487,65 +246,6 @@
               },
               {
                 "c_" : "IUCell",
-                "htmlID" : "cell",
-                "clickType" : 1,
-                "linkBox" : "08FA76A1-5879-4FD9-B8A6-940919800E09",
-                "isLinkOpenAtInNewTab" : true,
-                "themeClass" : "btn_pay_1",
-                "positionStorages" : {
-                  "c_" : "JDMutableArrayDict",
-                  "array" : [
-                    {
-                      "c_" : "IUPositionStorage",
-                      "position" : 0,
-                      "xUnit" : 0,
-                      "yUnit" : 0,
-                      "top" : 396,
-                      "left" : 268
-                    }
-                  ],
-                  "keys" : [
-                    960
-                  ]
-                },
-                "styleStorages" : {
-                  "c_" : "JDMutableArrayDict",
-                  "array" : [
-                    {
-                      "c_" : "IUStyleStorage",
-                      "widthUnit" : 0,
-                      "heightUnit" : 0,
-                      "width" : 100,
-                      "height" : 40,
-                      "borderType" : 0,
-                      "topBorderWidth" : 2,
-                      "leftBorderWidth" : 2,
-                      "rightBorderWidth" : 2,
-                      "bottomBorderWidth" : 2,
-                      "fontAlign" : 1
-                    }
-                  ],
-                  "keys" : [
-                    960
-                  ]
-                },
-                "propertyStorages" : {
-                  "c_" : "JDMutableArrayDict",
-                  "array" : [
-                    {
-                      "c_" : "IUPropertyStorage",
-                      "propertyStorage" : {
-                        "IUPropertyTextKey" : "<p>다음<\/p>"
-                      }
-                    }
-                  ],
-                  "keys" : [
-                    960
-                  ]
-                }
-              },
-              {
-                "c_" : "IUCell",
                 "htmlID" : "cell-19",
                 "clickType" : 1,
                 "linkBox" : "08FA76A1-5879-4FD9-B8A6-940919800E09",
@@ -558,7 +258,7 @@
                       "position" : 0,
                       "xUnit" : 0,
                       "yUnit" : 0,
-                      "top" : 396,
+                      "top" : 324,
                       "left" : 268
                     }
                   ],
@@ -898,7 +598,11 @@
     },
     "_groupType" : 1
   },
-  "customCodeAtHead" : "<script src=\"https:\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.12.0\/jquery.min.js\"><\/script>\n<script type=\"text\/javascript\" src=\"https:\/\/service.iamport.kr\/js\/iamport.payment-1.1.1.js\"><\/script><script src=\"..\/static\/project\/index.js\"><\/script>",
+  "customCodeAtHead" : "\n<script type=\"text\/javascript\" src=\"https:\/\/service.iamport.kr\/js\/iamport.payment-1.1.1.js\"><\/script>",
+  "pgCustomCodeAtTopHead" : "<script src=\"https:\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.12.0\/jquery.min.js\"><\/script>",
+  "jsFileRelativePaths" : [
+    "\/index.js"
+  ],
   "m_" : "305F0D56-1407-4058-8CD0-BF0B2028D7A5",
   "c_" : "IUPage"
 }

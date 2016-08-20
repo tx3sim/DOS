@@ -11,15 +11,13 @@
   height:720px;
 }
 .cell {
-  border-width:2px;
+  border-width:0px;
   height:40px;
-  left:604px;
-  text-align:center;
-  top:42px;
-  width:100px;
-}
-.cell > a {
+  left:555px;
   line-height:40px;
+  text-align:center;
+  top:53px;
+  width:100px;
 }
 .tabview-87 {
   border-width:1px;

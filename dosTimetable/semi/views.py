@@ -1,3 +1,4 @@
+
 from django.core import serializers
 import json
 from django.http import JsonResponse
@@ -5,7 +6,9 @@ from django.shortcuts import render, redirect
 
 # Create your views here.
 from django.views.decorators.csrf import csrf_exempt
+from django.views.generic import FormView
 
+from semi.forms import PaymentForm
 from semi.models import *
 
 
@@ -14,16 +17,20 @@ def index(request):
 
 
 @csrf_exempt
-def payment_1(request):
+def altCourse(request):
     if request.POST:
-        course = request.POST
-        courseName = course.get("course", "0")
+        tmp = request.POST
+        courseName = tmp.get("course", "0")
         return JsonResponse(serializers.serialize('json', SemesterClass.objects.filter(className__moduleName__course=courseName)),
                             safe=False)
-    else:
-        course = request.GET
-        courseName = course.get("courseName", "0")
-        return render(request, 'pages/payment_1.html', {"courseName": courseName})
+
+
+@csrf_exempt
+def altClass(request):
+    if request.POST:
+        tmp = request.POST
+        className = tmp.get('className', '0')
+        return JsonResponse(serializers.serialize('json', SemesterClass.objects.filter(className=className)), safe=False)
 
 
 @csrf_exempt
@@ -45,9 +52,28 @@ def getTimetable(request):
         serializers.serialize('json', SemesterClass.objects.filter(className__moduleName=moduleName)),
         safe=False)
 
-# @csrf_exempt
-# def selected(request):
-#     data = request.GET
-#     courseName = data.get("targetCourseName", "0")
-#     className = data.get("targetClassName", "0")
-#     return render(request, 'pages/payment_1.html', {"courseName": courseName, "className": className})
+
+class CreatePaymentForm(FormView):
+    template_name = 'pages/payment_1.html'
+    #success_url = '/pages/payment_2.html'
+    form_class = PaymentForm
+
+    def get_form_kwargs(self):
+        kwargs = super(CreatePaymentForm, self).get_form_kwargs()
+        tmp = self.request.GET
+        kwargs['class_choices'] = Classes.objects.filter(moduleName__course__name=tmp.get('course')).values_list("name", flat=True)
+        kwargs['time_choices'] = SemesterClass.objects.filter(className=tmp.get('class')).values_list("time", flat=True)
+        return kwargs
+
+    def get_initial(self):
+        tmp = self.request.GET
+        initial = super(CreatePaymentForm, self).get_initial()
+        initial['Course'] = tmp.get('course')
+        if tmp.get('class'):
+            initial['Class'] = tmp.get('class')
+            initial['Time'] = tmp.get('time')
+        else:
+            initial['Class'] = 0
+            initial['Time'] = 0
+
+        return initial

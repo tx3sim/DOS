@@ -45,11 +45,11 @@ class UserClass(models.Model):
     id = models.AutoField(primary_key=True)
     userName = models.ForeignKey(User)
     className = models.ForeignKey(SemesterClass)
+    # moduleClass = models.CharField(max_length=128)
 
 
 class Payment(models.Model):
     id = models.AutoField(primary_key=True)
     userName = models.ForeignKey(User, default="Sangyoon")
-
 
 

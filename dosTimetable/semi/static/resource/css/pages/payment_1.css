@@ -28,7 +28,7 @@
   margin-left:auto;
   margin-right:auto;
   right:0px;
-  top:20px;
+  top:511px;
   width:200px;
 }
 .pg-select-120 {
@@ -37,7 +37,7 @@
   margin-left:auto;
   margin-right:auto;
   right:0px;
-  top:90px;
+  top:438px;
   width:200px;
 }
 .pg-select-121 {
@@ -46,82 +46,15 @@
   margin-left:auto;
   margin-right:auto;
   right:0px;
-  top:160px;
+  top:473px;
   width:200px;
-}
-.pg-slide {
-  height:40px;
-  left:0px;
-  margin-left:auto;
-  margin-right:auto;
-  overflow:visible;
-  right:0px;
-  top:380px;
-  width:300px;
-}
-.pg-slide-bar > .iux-pg-slidebar-innerbar {
-  background-color:#787878;
-  width:25%;
-}
-.pg-slide-bar {
-  background-color:#E6E6E6;
-  border-radius:3px;
-  bottom:0px;
-  height:10px;
-  left:14px;
-  margin-bottom:auto;
-  margin-top:auto;
-  overflow:visible;
-  top:0px;
-  width:75%;
-}
-.pg-slide-point {
-  background-color:#FFFFFF;
-  border-color:#BEBEBE;
-  border-radius:50%;
-  border-width:1px;
-  bottom:0px;
-  height:24px;
-  margin-bottom:auto;
-  margin-top:auto;
-  overflow:visible;
-  right:0px;
-  top:0px;
-  width:24px;
-}
-.pg-slide-point > .iux-pg-slidepoint-toucharea {
-  height:64px;
-  width:64px;
-}
-.pg-slide-text-field {
-  bottom:0px;
-  font-size:14px;
-  font-weight:700;
-  height:20px;
-  left:85%;
-  margin-bottom:auto;
-  margin-top:auto;
-  text-align:center;
-  top:0px;
-  width:12%;
-}
-.cell {
-  border-width:2px;
-  height:40px;
-  left:268px;
-  text-align:center;
-  top:396px;
-  width:100px;
-}
-.cell > a {
-  line-height:40px;
 }
 .cell-19 {
   border-width:2px;
   height:40px;
   left:268px;
   text-align:center;
-  top:396px;
+  top:324px;
   width:100px;
 }
 .cell-19 > a {

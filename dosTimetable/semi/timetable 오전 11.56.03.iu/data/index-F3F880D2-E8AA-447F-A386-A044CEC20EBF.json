@@ -47,9 +47,6 @@
               {
                 "c_" : "IUCell",
                 "htmlID" : "cell",
-                "clickType" : 1,
-                "linkBox" : "305F0D56-1407-4058-8CD0-BF0B2028D7A5",
-                "isLinkOpenAtInNewTab" : true,
                 "themeClass" : "btn_apply",
                 "positionStorages" : {
                   "c_" : "JDMutableArrayDict",
@@ -59,8 +56,8 @@
                       "position" : 0,
                       "xUnit" : 0,
                       "yUnit" : 0,
-                      "top" : 42,
-                      "left" : 604
+                      "top" : 53,
+                      "left" : 555
                     }
                   ],
                   "keys" : [
@@ -77,25 +74,11 @@
                       "width" : 100,
                       "height" : 40,
                       "borderType" : 0,
-                      "topBorderWidth" : 2,
-                      "leftBorderWidth" : 2,
-                      "rightBorderWidth" : 2,
-                      "bottomBorderWidth" : 2,
+                      "topBorderWidth" : 0,
+                      "leftBorderWidth" : 0,
+                      "rightBorderWidth" : 0,
+                      "bottomBorderWidth" : 0,
                       "fontAlign" : 1
-                    }
-                  ],
-                  "keys" : [
-                    960
-                  ]
-                },
-                "propertyStorages" : {
-                  "c_" : "JDMutableArrayDict",
-                  "array" : [
-                    {
-                      "c_" : "IUPropertyStorage",
-                      "propertyStorage" : {
-                        "IUPropertyTextKey" : "<p>신청하기<\/p>"
-                      }
                     }
                   ],
                   "keys" : [
@@ -2070,7 +2053,8 @@
     },
     "_groupType" : 1
   },
-  "customCodeAtHead" : "<script src=\"https:\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.12.0\/jquery.min.js\"><\/script>\n<script type=\"text\/javascript\" src=\"https:\/\/service.iamport.kr\/js\/iamport.payment-1.1.1.js\"><\/script>\n<script src=\"..\/static\/project\/index.js\"><\/script>",
+  "customCodeAtHead" : "\n<script type=\"text\/javascript\" src=\"https:\/\/service.iamport.kr\/js\/iamport.payment-1.1.1.js\"><\/script>\n",
+  "pgCustomCodeAtTopHead" : "<script src=\"https:\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.12.0\/jquery.min.js\"><\/script>",
   "jsFileRelativePaths" : [
     "\/index.js"
   ],

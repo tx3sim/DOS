@@ -2,62 +2,42 @@
  * Created by daddyslab on 2016. 8. 16..
  */
 $(document).ready(function () {
-    var classSelect = $('.className');
-    var timeSelect = $('.timeValue');
+    var courseSelect = $('#id_Course');
+    var classSelect = $('#id_Class');
+    var timeSelect = $('#id_Time');
+    var moduleName = $('.tab').find('p').html();
+    var module = {moduleName: moduleName};
+    var course = "Starter";
+
+    if(moduleName) {
+        if (moduleName[1] == "M")
+            course = "Maker";
+        else if (moduleName[1] == "C")
+            course = "Creator";
+    }
+
+    getTimetable(module, course);
 
     var IMP = window.IMP;
     IMP.init('iamport'); // iamport -> 가맹점식별코드
 
-
     $('.tab').click(function () {
-        var moduleName = $(this).find('p').html();
-        var module = {moduleName: moduleName};
-        $.ajax({
-            url: '/tt',
-            type: 'POST',
-            data: module,
-            success: function (data) {
-                console.log(data);
-                $('tbody').find('tr').find('td:not(:first)').html("");
-                var timetable = JSON.parse(data);
-                console.log(timetable);
-                for (var i in timetable) {
-                    var time = timetable[i].fields.time;
-                    var name = timetable[i].fields.className;
-                    var appendClass = $("<div><a href='pages/payment_1.html'>" + name + "</a></div>");
-                    $('.' + time).append(appendClass);
-                }
+        moduleName = $(this).find('p').html();
+        module = {moduleName: moduleName};
+        course = "Starter";
 
-                // $('td div a').click(function () {
-                //     var targetData = {targetClassName: $(this).html(), targetCourseName: ""};
-                //
-                //     if (targetData.targetClassName[1] == 'M')
-                //         targetData.targetCourseName = 'Maker';
-                //     else if (targetData.targetClassName[1] == "C")
-                //         targetData.targetCourseName = 'Creator';
-                //     else
-                //         targetData.targetCourseName = 'Starter';
-                //
-                //     $.ajax({
-                //         url: '/selectedPay',
-                //         type: "post",
-                //         data: targetData,
-                //         success: function (data) {
-                //             console.log(data);
-                //             $('.courseName').val(data.courseName);
-                //             $('.className').val(data.className);
-                //         }
-                //     });
-                // });
-            }
+        if (moduleName[1] == "M")
+            course = "Maker";
+        else if (moduleName[1] == "C")
+            course = "Creator";
 
-        });
+        getTimetable(module, course);
     });
 
-    $('.courseName').change(function () {
+    courseSelect.change(function () {
         if ($(this).val() != '-') {
             $.ajax({
-                url: '/pages/payment_1.html',
+                url: '/altCourse',
                 type: 'POST',
                 data: {course: $(this).val()},
                 success: function (data) {
@@ -81,10 +61,10 @@ $(document).ready(function () {
         }
     });
 
-    $('.className').change(function () {
+    classSelect.change(function () {
         if ($(this).val() != '-') {
             $.ajax({
-                url: '/pages/payment_2.html',
+                url: '/altClass',
                 type: 'POST',
                 data: {className: $(this).val()},
                 success: function (data) {
@@ -136,3 +116,25 @@ $(document).ready(function () {
         });
     });
 });
+
+var getTimetable = function (module, course) {
+    $('.btn_apply').children().remove();
+    $('.btn_apply').append($("<button><a href='pages/payment_1.html?course=" + course + "'>신청하기</a></button>"));
+
+    $.ajax({
+        url: '/tt',
+        type: 'POST',
+        data: module,
+        success: function (data) {
+            $('tbody').find('tr').find('td:not(:first)').html("");
+            var timetable = JSON.parse(data);
+            console.log(timetable);
+            for (var i in timetable) {
+                var time = timetable[i].fields.time;
+                var name = timetable[i].fields.className;
+                var appendClass = $("<div><a href='pages/payment_1.html?course=" + course + "&class=" + name + "&time=" + time + "'>" + name + "</a></div>");
+                $('.' + time).append(appendClass);
+            }
+        }
+    });
+};
