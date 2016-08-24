@@ -1,7 +1,7 @@
-"""dosproject URL Configuration
+"""DOSProject URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/1.10/topics/http/urls/
+    https://docs.djangoproject.com/en/1.9/topics/http/urls/
 Examples:
 Function views
     1. Add an import:  from my_app import views
@@ -16,6 +16,16 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
+from courses.views import maker, getTimetable, altCourse, altClass
+from members.views import payment_2, apply_1
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^$', maker),
+    url(r'^tt$', getTimetable),
+    url(r'^altCourse$', altCourse),
+    url(r'^altClass$', altClass),
+    url(r'^apply_2_1$', payment_2),
+    #url(r'^apply_1$', CreateApplyForm.as_view()),
+    url(r'^apply_1$', apply_1)
 ]

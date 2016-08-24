@@ -1,0 +1,37 @@
+.iu-center-box {
+  width:960px;
+}
+.iu-page {
+  min-width:960px;
+}
+.page-content {
+  background-color:#FFFFFF;
+}
+.section {
+  height:720px;
+}
+.pg-form {
+  border-width:1px;
+  height:525px;
+  left:70px;
+  top:32px;
+  width:519px;
+}
+.cell {
+  border-width:1px;
+  height:40px;
+  left:71px;
+  line-height:40px;
+  text-align:center;
+  top:574px;
+  width:100px;
+}
+.cell-14 {
+  border-width:1px;
+  height:40px;
+  left:491px;
+  line-height:40px;
+  text-align:center;
+  top:571px;
+  width:100px;
+}

@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'semi',
 ]
 
+
+
 MIDDLEWARE_CLASSES = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -116,7 +118,7 @@ USE_L10N = True
 
 USE_TZ = True
 
-
+#AUTH_USER_MODEL = 'semi.MyUser'
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 

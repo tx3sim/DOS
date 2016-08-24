@@ -1,15 +1,13 @@
-
 from django.core import serializers
-import json
 from django.http import JsonResponse
-from django.shortcuts import render, redirect
-
-# Create your views here.
+from django.shortcuts import render
 from django.views.decorators.csrf import csrf_exempt
 from django.views.generic import FormView
 
 from semi.forms import PaymentForm
 from semi.models import *
+
+# Create your views here.
 
 
 def index(request):
@@ -77,3 +75,21 @@ class CreatePaymentForm(FormView):
             initial['Time'] = 0
 
         return initial
+
+
+# def signup(request):
+#     signupform = SignupForm()
+#     if request.method == "POST":
+#         signupform = SignupForm(request.POST)
+#         if signupform.is_valid():
+#             user = signupform.save(commit=False)
+#             user.email = signupform.cleaned_data['email']
+#             user.save()
+#
+#             return HttpResponseRedirect(
+#                 reverse("signup_ok")
+#             )
+#
+#     return render(request, "pages/payment_2.html", {
+#         "signupform": signupform,
+#     })

@@ -1,0 +1,87 @@
+{
+  "c_" : "IUProject",
+  "_buildPort" : 28189,
+  "viewPorts" : [
+    960
+  ],
+  "_pageGroup" : {
+    "c_" : "IUSheetGroup",
+    "name" : "pages",
+    "_children" : [
+      {
+        "c_" : "IUPage",
+        "file_" : "apply_1-B536502E-5264-40A5-83A9-CB7FA45EFA51.json",
+        "m_" : "B536502E-5264-40A5-83A9-CB7FA45EFA51"
+      },
+      {
+        "c_" : "IUPage",
+        "file_" : "maker-297813BF-DB32-4BB9-9E69-D984229E00F8.json",
+        "m_" : "297813BF-DB32-4BB9-9E69-D984229E00F8"
+      },
+      {
+        "c_" : "IUPage",
+        "file_" : "register-7344AC3D-D0A4-49BF-AC64-03EEEAAD3A18.json",
+        "m_" : "7344AC3D-D0A4-49BF-AC64-03EEEAAD3A18"
+      }
+    ]
+  },
+  "_classGroup" : {
+    "c_" : "IUSheetGroup",
+    "name" : "compositions",
+    "_children" : [
+      {
+        "c_" : "IUClass",
+        "file_" : "header-4CFA7CFF-213E-4015-BF56-FD2BAC11A216.json",
+        "m_" : "4CFA7CFF-213E-4015-BF56-FD2BAC11A216"
+      },
+      {
+        "c_" : "IUClass",
+        "file_" : "footer-5AC16325-7760-406F-9D52-3E7EE0FF6A70.json",
+        "m_" : "5AC16325-7760-406F-9D52-3E7EE0FF6A70"
+      },
+      {
+        "c_" : "IUClass",
+        "file_" : "sidebar-2F32F2CD-CAE2-4804-8F2F-0FDD61CC91E5.json",
+        "m_" : "2F32F2CD-CAE2-4804-8F2F-0FDD61CC91E5"
+      },
+      {
+        "c_" : "IUClass",
+        "file_" : "composition-3A025B06-55E3-4B51-B5C9-F400A0295D1A.json",
+        "m_" : "3A025B06-55E3-4B51-B5C9-F400A0295D1A"
+      }
+    ]
+  },
+  "_projectType" : 1,
+  "_projectData" : {
+    "c_" : "IUProjectDjangoData",
+    "_djangoBuildPath" : "$CurrentFolder\/templates",
+    "_djangoBuildPathForResource" : "$CurrentFolder\/static\/resource",
+    "_djangoResourcePrefix" : "\/static\/resource"
+  },
+  "_resourcePrefix" : "\/static\/resource",
+  "_buildPath" : "$CurrentFolder\/templates",
+  "_resourceBuildPath" : "$CurrentFolder\/static\/resource",
+  "_linkPrefix" : "",
+  "_sharedResourcePath" : "",
+  "_favicon" : "",
+  "_title" : "",
+  "_favoriteColors" : [
+    {
+      "c_" : "NSColor",
+      "R" : 0.3333333432674408,
+      "G" : 0.6745098233222961,
+      "B" : 0.9333333373069763,
+      "A" : 1
+    },
+    {
+      "c_" : "NSColor",
+      "R" : 0.2313725501298904,
+      "G" : 0.3490196168422699,
+      "B" : 0.5960784554481506,
+      "A" : 1
+    }
+  ],
+  "_documentPath" : "$CurrentFolder\/$AppName_document",
+  "_enableMinWidth" : true,
+  "idPrefix" : ""
+}
