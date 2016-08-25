@@ -1,0 +1,64 @@
+.iu-center-box {
+  width:960px;
+}
+.iu-page {
+  min-width:960px;
+}
+.page-content {
+  background-color:#FFFFFF;
+}
+.section {
+  height:720px;
+}
+.text-11 {
+  bottom:0px;
+  color:#B4B4B4;
+  font-family:'Helvetica', sans-serif;
+  font-size:36px;
+  height:50px;
+  left:0px;
+  margin-bottom:auto;
+  margin-top:auto;
+  text-align:center;
+  top:0px;
+  width:100%;
+}
+.cell {
+  border-width:1px;
+  height:40px;
+  left:0px;
+  line-height:40px;
+  margin-left:auto;
+  margin-right:auto;
+  right:0px;
+  text-align:center;
+  top:453px;
+  width:100px;
+}
+.cell-13 {
+  border-width:1px;
+  height:40px;
+  left:156px;
+  line-height:40px;
+  text-align:center;
+  top:208px;
+  width:100px;
+}
+.cell-14 {
+  border-width:1px;
+  height:40px;
+  left:303px;
+  line-height:40px;
+  text-align:center;
+  top:231px;
+  width:100px;
+}
+.cell-15 {
+  border-width:1px;
+  height:40px;
+  left:192px;
+  line-height:40px;
+  text-align:center;
+  top:295px;
+  width:100px;
+}

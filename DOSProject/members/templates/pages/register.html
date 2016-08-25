@@ -35,8 +35,37 @@
       <section class="iu-page-content page-content">
         <section class="iu-section section">
           <div class="iu-center-box center-box-10">
-            <form class="iu-pg-form form_childMember pg-form" enctype="multipart/form-data" name="form_childMember" method="post">
+            <form class="iu-pg-form form_childMember pg-form" enctype="multipart/form-data" name="form_childMember" action="/apply_2_1" method="post">
               {% csrf_token %}
+              <input class="iu-pg-text-field input_childName pg-text-field" required
+               type="text" name="childName" placeholder="학생이름">
+              <input class="iu-pg-radio-button radio_man pg-radio-button" checked type="radio" name="gender" value="M">
+              <input class="iu-pg-radio-button radio_women pg-radio-button-16" type="radio" name="gender" value="W">
+              <input class="iu-pg-text-field input_birthday pg-text-field-17" required type="date" name="birthday" placeholder="생년월일">
+              <input class="iu-pg-text-field input_school pg-text-field-18" required type="text" name="school" placeholder="학교">
+              <textarea class="iu-pg-text-view input_experience pg-text-view" name="experience" placeholder="코딩 경험"></textarea>
+              <input class="iu-pg-text-field input_memberName pg-text-field-20" required type="text" name="memberName" placeholder="부모님 성함">
+              <input class="iu-pg-text-field input_phoneNumber pg-text-field-21" required type="number" name="phoneNumber" placeholder="전화번호">
+              <input class="iu-pg-text-field input_email pg-text-field-22" required type="email" name="email" placeholder="이메일(로그인 시 아이디)">
+              <input class="iu-pg-text-field input_password1 pg-text-field-23" required type="password" name="password1" placeholder="비밀번호">
+              <input class="iu-pg-text-field input_password2 pg-text-field-24" required type="password" name="password2" placeholder="비밀번호 확인">
+              <input class="iu-pg-text-field input_address pg-text-field-25" required type="text" name="address" placeholder="주소">
+              <select class="iu-pg-select select_path pg-select" required name="path">
+                <option value="default">-</option>
+                <option value="facebook">페이스북</option>
+                <option value="intro">지인소개</option>
+                <option value="plancard">현수막</option>
+                <option value="paper">전단지</option>
+                <option value="search">검색</option>
+              </select>
+              <input class="iu-pg-text-field input_keyword pg-text-field-27" type="text" placeholder="검색어">
+              <input class="iu-pg-button btn_submit pg-button" type="submit" value="다음">
+              <div class="iu-cell cell-29">
+                <p>남자</p>
+              </div>
+              <div class="iu-cell cell-31">
+                <p>여자</p>
+              </div>
             </form>
             <div class="iu-cell btn_prev cell">
               <p>이전</p>

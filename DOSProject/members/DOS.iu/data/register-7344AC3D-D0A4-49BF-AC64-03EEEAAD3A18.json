@@ -47,8 +47,120 @@
               {
                 "c_" : "PGForm",
                 "htmlID" : "pg-form",
+                "children" : [
+                  {
+                    "c_" : "PGTextField",
+                    "htmlID" : "pg-text-field",
+                    "positionStorages" : {
+                      "c_" : "JDMutableArrayDict",
+                      "array" : [
+                        {
+                          "c_" : "IUPositionStorage",
+                          "position" : 0,
+                          "xUnit" : 0,
+                          "yUnit" : 0,
+                          "top" : 44,
+                          "left" : 86
+                        }
+                      ],
+                      "keys" : [
+                        960
+                      ]
+                    },
+                    "styleStorages" : {
+                      "c_" : "JDMutableArrayDict",
+                      "array" : [
+                        {
+                          "c_" : "IUStyleStorage",
+                          "widthUnit" : 0,
+                          "heightUnit" : 0,
+                          "width" : 200,
+                          "height" : 30,
+                          "paddingLeft" : 8,
+                          "paddingRight" : 8
+                        }
+                      ],
+                      "keys" : [
+                        960
+                      ]
+                    },
+                    "placeholder" : "placeholder"
+                  },
+                  {
+                    "c_" : "PGRadioButton",
+                    "htmlID" : "pg-radio-button",
+                    "positionStorages" : {
+                      "c_" : "JDMutableArrayDict",
+                      "array" : [
+                        {
+                          "c_" : "IUPositionStorage",
+                          "position" : 0,
+                          "xUnit" : 0,
+                          "yUnit" : 0,
+                          "top" : 106,
+                          "left" : 123
+                        }
+                      ],
+                      "keys" : [
+                        960
+                      ]
+                    },
+                    "styleStorages" : {
+                      "c_" : "JDMutableArrayDict",
+                      "array" : [
+                        {
+                          "c_" : "IUStyleStorage",
+                          "widthUnit" : 0,
+                          "heightUnit" : 0,
+                          "width" : 24,
+                          "height" : 32
+                        }
+                      ],
+                      "keys" : [
+                        960
+                      ]
+                    },
+                    "inputName" : "gender"
+                  },
+                  {
+                    "c_" : "PGRadioButton",
+                    "htmlID" : "pg-radio-button-16",
+                    "positionStorages" : {
+                      "c_" : "JDMutableArrayDict",
+                      "array" : [
+                        {
+                          "c_" : "IUPositionStorage",
+                          "position" : 0,
+                          "xUnit" : 0,
+                          "yUnit" : 0,
+                          "top" : 107,
+                          "left" : 154
+                        }
+                      ],
+                      "keys" : [
+                        960
+                      ]
+                    },
+                    "styleStorages" : {
+                      "c_" : "JDMutableArrayDict",
+                      "array" : [
+                        {
+                          "c_" : "IUStyleStorage",
+                          "widthUnit" : 0,
+                          "heightUnit" : 0,
+                          "width" : 24,
+                          "height" : 32
+                        }
+                      ],
+                      "keys" : [
+                        960
+                      ]
+                    },
+                    "inputName" : "gender",
+                    "inputValue" : "여자"
+                  }
+                ],
                 "themeClass" : "form_childMember",
-                "pgInnerPostfixCode" : "{{ form.as_p }}",
                 "positionStorages" : {
                   "c_" : "JDMutableArrayDict",
                   "array" : [

@@ -75,5 +75,31 @@
   margin:auto;
   right:0px;
   top:0px;
-  width:240px;
+  width:310px;
+}
+.pg-text-field {
+  border-width:1px;
+  height:30px;
+  left:47px;
+  padding-left:8px;
+  padding-right:8px;
+  top:21px;
+  width:200px;
+}
+.pg-text-field-20 {
+  border-width:1px;
+  height:30px;
+  left:48px;
+  padding-left:8px;
+  padding-right:8px;
+  top:69px;
+  width:200px;
+}
+.pg-button {
+  background-color:#DCDCDC;
+  color:#6D6D6D;
+  height:40px;
+  left:162px;
+  top:125px;
+  width:100px;
 }

@@ -12,11 +12,11 @@ class UserCreationForm(forms.ModelForm):
     fields, plus a repeated password."""
     password1 = forms.CharField(label='Password', widget=forms.PasswordInput)
     password2 = forms.CharField(label='Password confirmation', widget=forms.PasswordInput)
-    phone_number = forms.CharField(label='Phone Number', widget=forms.NumberInput)
+    phoneNumber = forms.CharField(label='Phone Number', widget=forms.NumberInput)
 
     class Meta:
         model = Member
-        fields = ('email', 'username', 'phone_number')
+        fields = ('email', 'memberName', 'phoneNumber')
 
     def clean_password2(self):
         # Check that the two password entries match
@@ -44,7 +44,7 @@ class UserChangeForm(forms.ModelForm):
 
     class Meta:
         model = Member
-        fields = ('email', 'password', 'username', 'phone_number', 'is_active', 'is_admin')
+        fields = ('email', 'password', 'memberName', 'phoneNumber', 'is_active', 'is_admin')
 
     def clean_password(self):
         # Regardless of what the user provides, return the initial value.
@@ -61,11 +61,11 @@ class MemberAdmin(BaseUserAdmin):
     # The fields to be used in displaying the User model.
     # These override the definitions on the base UserAdmin
     # that reference specific fields on auth.User.
-    list_display = ('email', 'username', 'phone_number', 'is_admin')
+    list_display = ('email', 'memberName', 'phoneNumber', 'is_admin')
     list_filter = ('is_admin',)
     fieldsets = (
         (None, {'fields': ('email', 'password')}),
-        ('Personal info', {'fields': ('username', 'phone_number',)}),
+        ('Personal info', {'fields': ('memberName', 'phoneNumber',)}),
         ('Permissions', {'fields': ('is_admin',)}),
     )
     # add_fieldsets is not a standard ModelAdmin attribute. UserAdmin
@@ -73,7 +73,7 @@ class MemberAdmin(BaseUserAdmin):
     add_fieldsets = (
         (None, {
             'classes': ('wide',),
-            'fields': ('email', 'username', 'phone_number', 'password1', 'password2')}
+            'fields': ('email', 'memberName', 'phoneNumber', 'password1', 'password2')}
          ),
     )
     search_fields = ('email',)

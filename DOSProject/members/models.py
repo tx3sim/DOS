@@ -13,7 +13,7 @@ GENDER = (
 
 
 class MemberManager(BaseUserManager):
-    def create_user(self, email, username, phone_number, password=None):
+    def create_user(self, email, memberName, phoneNumber, password=None):
         """
         Creates and saves a User with the given email, date of
         birth and password.
@@ -23,23 +23,23 @@ class MemberManager(BaseUserManager):
 
         user = self.model(
             email=self.normalize_email(email),
-            username=username,
-            phone_number=phone_number,
+            memberName=memberName,
+            phoneNumber=phoneNumber,
         )
 
         user.set_password(password)
         user.save(using=self._db)
         return user
 
-    def create_superuser(self, email, username, phone_number, password):
+    def create_superuser(self, email, memberName, phoneNumber, password):
         """
         Creates and saves a superuser with the given email, date of
         birth and password.
         """
         user = self.create_user(email,
                                 password=password,
-                                username=username,
-                                phone_number=phone_number
+                                memberName=memberName,
+                                phoneNumber=phoneNumber
                                 )
         user.is_admin = True
         user.save(using=self._db)
@@ -52,15 +52,15 @@ class Member(AbstractBaseUser):
         max_length=255,
         unique=True,
     )
-    username = models.CharField(max_length=10, default="")
-    phone_number = models.CharField(blank=True, max_length=13)  # validators should be a list
+    memberName = models.CharField(max_length=10, default="")
+    phoneNumber = models.CharField(blank=True, max_length=13)  # validators should be a list
     is_active = models.BooleanField(default=True)
     is_admin = models.BooleanField(default=False)
 
     objects = MemberManager()
 
     USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = ['username', 'phone_number']
+    REQUIRED_FIELDS = ['memberName', 'phoneNumber']
 
     def get_full_name(self):
         # The user is identified by their email address
@@ -101,6 +101,25 @@ class ChildMember(models.Model):
 
     def __str__(self):
         return self.childName
+
+    def create_child(self, childName, birthday, school, gender, experience):
+        """
+        Creates and saves a User with the given email, date of
+        birth and password.
+        """
+        if not childName:
+            raise ValueError('Users must have an email address')
+
+        user = self.model(
+            childName=childName,
+            birthday=birthday,
+            school=school,
+            gender=gender,
+            experience=experience
+        )
+
+        user.save(using=self._db)
+        return user
 
 
 class ChildMemberSubject(models.Model):

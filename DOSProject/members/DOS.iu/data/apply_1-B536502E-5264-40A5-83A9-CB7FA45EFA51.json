@@ -104,6 +104,7 @@
               {
                 "c_" : "IUCell",
                 "htmlID" : "cell-16",
+                "clickType" : 2,
                 "themeClass" : "btn_register",
                 "positionStorages" : {
                   "c_" : "JDMutableArrayDict",
@@ -563,9 +564,147 @@
           {
             "c_" : "PGForm",
             "htmlID" : "pg-form-17",
+            "children" : [
+              {
+                "c_" : "PGTextField",
+                "htmlID" : "pg-text-field",
+                "themeClass" : "input_email",
+                "positionStorages" : {
+                  "c_" : "JDMutableArrayDict",
+                  "array" : [
+                    {
+                      "c_" : "IUPositionStorage",
+                      "position" : 0,
+                      "xUnit" : 0,
+                      "yUnit" : 0,
+                      "top" : 21,
+                      "left" : 47
+                    }
+                  ],
+                  "keys" : [
+                    960
+                  ]
+                },
+                "styleStorages" : {
+                  "c_" : "JDMutableArrayDict",
+                  "array" : [
+                    {
+                      "c_" : "IUStyleStorage",
+                      "widthUnit" : 0,
+                      "heightUnit" : 0,
+                      "width" : 200,
+                      "height" : 30,
+                      "topBorderWidth" : 1,
+                      "leftBorderWidth" : 1,
+                      "rightBorderWidth" : 1,
+                      "bottomBorderWidth" : 1,
+                      "paddingLeft" : 8,
+                      "paddingRight" : 8
+                    }
+                  ],
+                  "keys" : [
+                    960
+                  ]
+                },
+                "placeholder" : "이메일"
+              },
+              {
+                "c_" : "PGTextField",
+                "htmlID" : "pg-text-field-20",
+                "themeClass" : "input_password",
+                "positionStorages" : {
+                  "c_" : "JDMutableArrayDict",
+                  "array" : [
+                    {
+                      "c_" : "IUPositionStorage",
+                      "position" : 0,
+                      "xUnit" : 0,
+                      "yUnit" : 0,
+                      "top" : 69,
+                      "left" : 48
+                    }
+                  ],
+                  "keys" : [
+                    960
+                  ]
+                },
+                "styleStorages" : {
+                  "c_" : "JDMutableArrayDict",
+                  "array" : [
+                    {
+                      "c_" : "IUStyleStorage",
+                      "widthUnit" : 0,
+                      "heightUnit" : 0,
+                      "width" : 200,
+                      "height" : 30,
+                      "topBorderWidth" : 1,
+                      "leftBorderWidth" : 1,
+                      "rightBorderWidth" : 1,
+                      "bottomBorderWidth" : 1,
+                      "paddingLeft" : 8,
+                      "paddingRight" : 8
+                    }
+                  ],
+                  "keys" : [
+                    960
+                  ]
+                },
+                "placeholder" : "비밀번호",
+                "type" : 1
+              },
+              {
+                "c_" : "PGButton",
+                "htmlID" : "pg-button",
+                "themeClass" : "btn_login",
+                "positionStorages" : {
+                  "c_" : "JDMutableArrayDict",
+                  "array" : [
+                    {
+                      "c_" : "IUPositionStorage",
+                      "position" : 0,
+                      "xUnit" : 0,
+                      "yUnit" : 0,
+                      "top" : 125,
+                      "left" : 162
+                    }
+                  ],
+                  "keys" : [
+                    960
+                  ]
+                },
+                "styleStorages" : {
+                  "c_" : "JDMutableArrayDict",
+                  "array" : [
+                    {
+                      "c_" : "IUStyleStorage",
+                      "widthUnit" : 0,
+                      "heightUnit" : 0,
+                      "width" : 100,
+                      "height" : 40,
+                      "bgColor1" : {
+                        "c_" : "NSColor",
+                        "R" : 0.8627451062202454,
+                        "G" : 0.8627451062202454,
+                        "B" : 0.8627451062202454,
+                        "A" : 1
+                      },
+                      "fontColor" : {
+                        "c_" : "NSColor",
+                        "R" : 0.4274509847164154,
+                        "G" : 0.4274509847164154,
+                        "B" : 0.4274509847164154,
+                        "A" : 1
+                      }
+                    }
+                  ],
+                  "keys" : [
+                    960
+                  ]
+                },
+                "label" : "기존정보 로그인"
+              }
+            ],
             "themeClass" : "form_login",
-            "pgInnerCode" : "<table>\n        <tr><th><label for=\"id_email\">E-mail:<\/label><\/th><td>{{ form.email }}<\/td><\/tr>\n        <tr><th><label for=\"id_password\">Password:<\/label><\/th><td>{{ form.password }}<\/td><\/tr>\n    <\/table>\n    <input type=\"submit\" value=\"Login\" \/>\n    <input type=\"hidden\" name=\"next\" value=\"\/\">",
-            "pgAttributeCode" : "action=\"\/login\/\"",
             "positionStorages" : {
               "c_" : "JDMutableArrayDict",
               "array" : [
@@ -591,7 +730,7 @@
                   "c_" : "IUStyleStorage",
                   "widthUnit" : 0,
                   "heightUnit" : 0,
-                  "width" : 240,
+                  "width" : 310,
                   "height" : 200
                 }
               ],

@@ -73,14 +73,11 @@
     </div>
     <div id="iux-popup-dimcolor" class="iux-popup-dimcolor" style="display:none;"></div>
     <div id="popup" class="iu-popup popup" data-iu-popup-extern-closed data-iu-show-duration="0.40" data-iu-show-animation="top-down">
-      <form class="iu-pg-form form_login pg-form-17" action="/login/" enctype="multipart/form-data" name="login" method="post">
+      <form class="iu-pg-form form_login pg-form-17" enctype="multipart/form-data" name="login" method="post">
         {% csrf_token %}
-        <table>
-                <tr><th><label for="id_email">E-mail:</label></th><td>{{ form.email }}</td></tr>
-                <tr><th><label for="id_password">Password:</label></th><td>{{ form.password }}</td></tr>
-            </table>
-            <input type="submit" value="Login" />
-            <input type="hidden" name="next" value="/">
+        <input class="iu-pg-text-field input_email pg-text-field" type="text" placeholder="이메일">
+        <input class="iu-pg-text-field input_password pg-text-field-20" type="password" placeholder="비밀번호">
+        <input class="iu-pg-button btn_login pg-button" type="button" value="기존정보 로그인">
       </form>
       <div class="iux-popup-close-button"></div>
     </div>

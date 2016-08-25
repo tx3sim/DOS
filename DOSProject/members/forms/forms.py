@@ -1,8 +1,19 @@
 from django import forms
+from django.forms import ModelForm
 
 from courses.models import Course, SemesterSubject
-from members.models import Member
+from members.models import Member, ChildMember
 
+
+# class MemberForm(ModelForm):
+#     class Meta:
+#         model = Member
+#
+#
+# class ChildMemberForm(ModelForm):
+#     class Meta:
+#         model = ChildMember
+#         exclude = ['memberName']
 
 # class ApplyForm(forms.ModelForm):
 #     class Meta:
