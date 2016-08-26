@@ -13,9 +13,17 @@
 .pg-form {
   border-width:1px;
   height:681px;
-  left:70px;
+  left:71px;
   top:32px;
   width:519px;
+}
+.pg-button {
+  background-color:#DCDCDC;
+  color:#6D6D6D;
+  height:40px;
+  left:286px;
+  top:632px;
+  width:100px;
 }
 .pg-text-field {
   border-width:1px;
@@ -152,26 +160,18 @@
 }
 .pg-select {
   height:32px;
-  left:151px;
+  left:150px;
   top:584px;
   width:130px;
 }
 .pg-text-field-27 {
   border-width:1px;
   height:30px;
-  left:319px;
+  left:306px;
   padding-left:8px;
   padding-right:8px;
-  top:586px;
+  top:583px;
   width:105px;
-}
-.pg-button {
-  background-color:#DCDCDC;
-  color:#6D6D6D;
-  height:40px;
-  left:286px;
-  top:632px;
-  width:100px;
 }
 .cell-29 {
   height:33px;
@@ -188,6 +188,15 @@
   text-align:center;
   top:55px;
   width:52px;
+}
+.cell-30 {
+  border-width:1px;
+  height:40px;
+  left:8px;
+  line-height:40px;
+  text-align:center;
+  top:65px;
+  width:131px;
 }
 .cell {
   border-width:1px;
@@ -206,4 +215,61 @@
   text-align:center;
   top:666px;
   width:100px;
+}
+.popup {
+  background-color:#FFFFFF;
+  height:240px;
+  position:fixed;
+  width:400px;
+  z-index:100;
+}
+.popup > .iux-popup-close-button {
+  background-image:url('/static/resource/project/btn_popup_close.png');
+  display:inherit;
+  height:32px;
+  position:absolute;
+  right:10px;
+  top:10px;
+  width:32px;
+}
+.pg-form-17 {
+  bottom:0px;
+  height:200px;
+  left:0px;
+  margin:auto;
+  right:0px;
+  top:0px;
+  width:310px;
+}
+.pg-button-37 {
+  background-color:#DCDCDC;
+  color:#6D6D6D;
+  height:40px;
+  left:162px;
+  top:125px;
+  width:100px;
+}
+.pg-text-field-35 {
+  border-width:1px;
+  height:30px;
+  left:0px;
+  margin-left:auto;
+  margin-right:auto;
+  padding-left:8px;
+  padding-right:8px;
+  right:0px;
+  top:33px;
+  width:200px;
+}
+.pg-text-field-36 {
+  border-width:1px;
+  height:30px;
+  left:0px;
+  margin-left:auto;
+  margin-right:auto;
+  padding-left:8px;
+  padding-right:8px;
+  right:0px;
+  top:84px;
+  width:200px;
 }

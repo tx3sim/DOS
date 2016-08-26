@@ -3,14 +3,14 @@ from django.db import models
 
 # Create your models here.
 class Course(models.Model):
-    name = models.CharField(max_length=128, null=False, primary_key=True)
+    name = models.CharField(max_length=128, null=False)
 
     def __str__(self):
         return self.name
 
 
 class Module(models.Model):
-    name = models.CharField(max_length=128, null=False, primary_key=True)
+    name = models.CharField(max_length=128, null=False)
     course = models.ForeignKey(Course)
 
     def __str__(self):
@@ -18,7 +18,7 @@ class Module(models.Model):
 
 
 class Subject(models.Model):
-    name = models.CharField(max_length=128, null=False, primary_key=True)
+    name = models.CharField(max_length=128, null=False)
     module = models.ForeignKey(Module)
 
     def __str__(self):
@@ -26,7 +26,7 @@ class Subject(models.Model):
 
 
 class Semester(models.Model):
-    name = models.CharField(max_length=128, null=False, primary_key=True)
+    name = models.CharField(max_length=128, null=False)
     subject = models.ManyToManyField(Subject)
 
     def __str__(self):
@@ -34,7 +34,6 @@ class Semester(models.Model):
 
 
 class SemesterSubject(models.Model):
-    id = models.AutoField(primary_key=True)
     semester = models.ForeignKey(Semester)
     subject = models.ForeignKey(Subject)
     time = models.CharField(max_length=128, null=False)

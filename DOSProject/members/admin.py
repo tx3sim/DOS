@@ -13,10 +13,12 @@ class UserCreationForm(forms.ModelForm):
     password1 = forms.CharField(label='Password', widget=forms.PasswordInput)
     password2 = forms.CharField(label='Password confirmation', widget=forms.PasswordInput)
     phoneNumber = forms.CharField(label='Phone Number', widget=forms.NumberInput)
+    address = forms.CharField(label='Address', widget=forms.TextInput)
+    path = forms.CharField(label='Path', widget=forms.ChoiceField)
 
     class Meta:
         model = Member
-        fields = ('email', 'memberName', 'phoneNumber')
+        fields = ('email', 'memberName', 'phoneNumber', 'address', 'path')
 
     def clean_password2(self):
         # Check that the two password entries match
@@ -44,7 +46,7 @@ class UserChangeForm(forms.ModelForm):
 
     class Meta:
         model = Member
-        fields = ('email', 'password', 'memberName', 'phoneNumber', 'is_active', 'is_admin')
+        fields = ('email', 'password', 'memberName', 'phoneNumber', 'address', 'path', 'is_active', 'is_admin')
 
     def clean_password(self):
         # Regardless of what the user provides, return the initial value.
@@ -61,11 +63,11 @@ class MemberAdmin(BaseUserAdmin):
     # The fields to be used in displaying the User model.
     # These override the definitions on the base UserAdmin
     # that reference specific fields on auth.User.
-    list_display = ('email', 'memberName', 'phoneNumber', 'is_admin')
+    list_display = ('email', 'memberName', 'phoneNumber', 'address', 'path', 'is_admin')
     list_filter = ('is_admin',)
     fieldsets = (
         (None, {'fields': ('email', 'password')}),
-        ('Personal info', {'fields': ('memberName', 'phoneNumber',)}),
+        ('Personal info', {'fields': ('memberName', 'phoneNumber', 'address', 'path')}),
         ('Permissions', {'fields': ('is_admin',)}),
     )
     # add_fieldsets is not a standard ModelAdmin attribute. UserAdmin
@@ -73,7 +75,7 @@ class MemberAdmin(BaseUserAdmin):
     add_fieldsets = (
         (None, {
             'classes': ('wide',),
-            'fields': ('email', 'memberName', 'phoneNumber', 'password1', 'password2')}
+            'fields': ('email', 'memberName', 'phoneNumber', 'address', 'path', 'password1', 'password2')}
          ),
     )
     search_fields = ('email',)
@@ -83,7 +85,7 @@ class MemberAdmin(BaseUserAdmin):
 
 class ChildMemberAdmin(admin.ModelAdmin):
     model = ChildMember
-    list_display = ['id', 'memberName', 'childName', 'birthday', 'gender', 'school']
+    list_display = ['memberName', 'childName', 'birthday', 'gender', 'school']
 
 
 class ChildMemberSubjectAdmin(admin.ModelAdmin):

@@ -36,5 +36,5 @@ def getTimetable(request):
     module = request.POST
     moduleName = module.get("moduleName", "0")
     return JsonResponse(
-        serializers.serialize('json', SemesterSubject.objects.filter(subject__module=moduleName)),
+        serializers.serialize('json', SemesterSubject.objects.filter(subject__module__name=moduleName)),
         safe=False)

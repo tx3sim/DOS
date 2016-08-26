@@ -35,8 +35,12 @@
       <section class="iu-page-content page-content">
         <section class="iu-section section">
           <div class="iu-center-box center-box-10">
-            <form class="iu-pg-form form_childMember pg-form" enctype="multipart/form-data" name="form_childMember" action="/apply_2_1" method="post">
+            <form class="iu-pg-form form_register pg-form" enctype="multipart/form-data" name="form_register" action="javascript:" method="post">
               {% csrf_token %}
+              <input type="hidden" name="course" value="{{ course }}">
+              <input type="hidden" name="subject" value="{{ subject }}">
+              <input type="hidden" name="time" value="{{ time }}">
+              <input class="iu-pg-button btn_submit pg-button" type="submit" value="다음">
               <input class="iu-pg-text-field input_childName pg-text-field" required
                type="text" name="childName" placeholder="학생이름">
               <input class="iu-pg-radio-button radio_man pg-radio-button" checked type="radio" name="gender" value="M">
@@ -59,12 +63,14 @@
                 <option value="search">검색</option>
               </select>
               <input class="iu-pg-text-field input_keyword pg-text-field-27" type="text" placeholder="검색어">
-              <input class="iu-pg-button btn_submit pg-button" type="submit" value="다음">
               <div class="iu-cell cell-29">
                 <p>남자</p>
               </div>
               <div class="iu-cell cell-31">
                 <p>여자</p>
+              </div>
+              <div class="iux-popup-button iu-cell btn_login cell-30" data-iu-popup-id="popup">
+                <p>기존 정보로 신청</p>
               </div>
             </form>
             <div class="iu-cell btn_prev cell">
@@ -76,6 +82,19 @@
           </div>
         </section>
       </section>
+    </div>
+    <div id="iux-popup-dimcolor" class="iux-popup-dimcolor" style="display:none;"></div>
+    <div id="popup" class="iu-popup popup" data-iu-popup-extern-closed data-iu-show-duration="0.40" data-iu-show-animation="top-down">
+      <form class="iu-pg-form form_login pg-form-17" enctype="multipart/form-data" name="login" action="javascript:" method="post">
+        {% csrf_token %}
+        <input type="hidden" name="course" value="{{ course }}">
+        <input type="hidden" name="subject" value="{{ subject }}">
+        <input type="hidden" name="time" value="{{ time }}">
+        <input class="iu-pg-button btn_login pg-button-37" type="submit" value="기존정보 로그인">
+        <input class="iu-pg-text-field login_email pg-text-field-35" type="email" name="email" placeholder="이메일">
+        <input class="iu-pg-text-field login_password pg-text-field-36" type="password" name="password" placeholder="비밀번호">
+      </form>
+      <div class="iux-popup-close-button"></div>
     </div>
   </body>
 </HTML>

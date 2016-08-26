@@ -10,15 +10,6 @@
 .section {
   height:720px;
 }
-.cell {
-  border-width:1px;
-  height:40px;
-  left:151px;
-  line-height:40px;
-  text-align:center;
-  top:361px;
-  width:131px;
-}
 .cell-16 {
   border-width:1px;
   height:40px;
@@ -51,55 +42,4 @@
   left:54px;
   top:148px;
   width:200px;
-}
-.popup {
-  background-color:#FFFFFF;
-  height:240px;
-  position:fixed;
-  width:400px;
-  z-index:100;
-}
-.popup > .iux-popup-close-button {
-  background-image:url('/static/resource/project/btn_popup_close.png');
-  display:inherit;
-  height:32px;
-  position:absolute;
-  right:10px;
-  top:10px;
-  width:32px;
-}
-.pg-form-17 {
-  bottom:0px;
-  height:200px;
-  left:0px;
-  margin:auto;
-  right:0px;
-  top:0px;
-  width:310px;
-}
-.pg-text-field {
-  border-width:1px;
-  height:30px;
-  left:47px;
-  padding-left:8px;
-  padding-right:8px;
-  top:21px;
-  width:200px;
-}
-.pg-text-field-20 {
-  border-width:1px;
-  height:30px;
-  left:48px;
-  padding-left:8px;
-  padding-right:8px;
-  top:69px;
-  width:200px;
-}
-.pg-button {
-  background-color:#DCDCDC;
-  color:#6D6D6D;
-  height:40px;
-  left:162px;
-  top:125px;
-  width:100px;
 }

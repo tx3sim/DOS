@@ -6,7 +6,7 @@ from courses.models import Course, Module, Subject, SemesterSubject, Semester
 
 class SemesterSubjectAdmin(admin.ModelAdmin):
     model = SemesterSubject
-    list_display = ['id', 'semester', 'subject', 'time']
+    list_display = ['semester', 'subject', 'time']
 
 admin.site.register(Course)
 admin.site.register(Module)

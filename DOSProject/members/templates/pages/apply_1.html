@@ -35,9 +35,6 @@
       <section class="iu-page-content page-content">
         <section class="iu-section section">
           <div class="iu-center-box center-box-10">
-            <div class="iux-popup-button iu-cell btn_login cell" data-iu-popup-id="popup">
-              <p>기존 정보로 신청</p>
-            </div>
             <div class="iu-cell btn_register cell-16">
               <p>신규 신청</p>
             </div>
@@ -70,16 +67,6 @@
           </div>
         </section>
       </section>
-    </div>
-    <div id="iux-popup-dimcolor" class="iux-popup-dimcolor" style="display:none;"></div>
-    <div id="popup" class="iu-popup popup" data-iu-popup-extern-closed data-iu-show-duration="0.40" data-iu-show-animation="top-down">
-      <form class="iu-pg-form form_login pg-form-17" enctype="multipart/form-data" name="login" method="post">
-        {% csrf_token %}
-        <input class="iu-pg-text-field input_email pg-text-field" type="text" placeholder="이메일">
-        <input class="iu-pg-text-field input_password pg-text-field-20" type="password" placeholder="비밀번호">
-        <input class="iu-pg-button btn_login pg-button" type="button" value="기존정보 로그인">
-      </form>
-      <div class="iux-popup-close-button"></div>
     </div>
   </body>
 </HTML>

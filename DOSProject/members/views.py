@@ -1,59 +1,37 @@
-from django.core import serializers
-from django.http import HttpResponseRedirect
+from django.http import JsonResponse
 from django.shortcuts import render
-from django.contrib.auth import authenticate
+from django.contrib.auth import authenticate, login
 # Create your views here.
 from django.views.decorators.csrf import csrf_exempt
 
-from courses.models import SemesterSubject, Subject, Course, Module
-
-# def register(request):
-#     if request.method == 'POST':
-#         uf = UserForm(request.POST, prefix='user')
-#         upf = UserProfileForm(request.POST, prefix='userprofile')
-#         if uf.is_valid() * upf.is_valid():
-#             user = uf.save()
-#             userprofile = upf.save(commit=False)
-#             userprofile.user = user
-#             userprofile.save()
-#             return django.http.HttpResponseRedirect(…something…)
-from members.admin import UserCreationForm
-
-# ser = User.objects.create_user(form.cleaned_data['username'],
-#                                form.cleaned_data['email'],
-#                                form.cleaned_data['password1'])
-# profile = Profile(user=user, gender=form.cleaned_data['gender'])
-# profile.save()
-# if form.cleaned_data['gender'] == "MAN":
-#     user.groups.add(name='강남')
-# else:
-#     user.groups.add(name="판교")
-# user.save()
+from courses.models import SemesterSubject, Subject, Course
 from members.models import Member, ChildMember
 
 
-def apply_2_1(request):
+@csrf_exempt
+def apply_2(request):
     if request.POST:
         member = Member.objects.create_user(request.POST['email'],
                                             request.POST['memberName'],
                                             request.POST['phoneNumber'],
-                                            request.POST['password1'])
+                                            request.POST['address'],
+                                            request.POST['path'])
+        member.set_password(request.POST['password1'])
         member.save()
+        new_member = authenticate(email=request.POST['email'],
+                                  password=request.POST['password1'], )
+        login(request, new_member)
         child = ChildMember.objects.create(memberName=member, childName=request.POST['childName'],
                                            gender=request.POST['gender'], school=request.POST['school'],
                                            experience=request.POST['experience'], birthday=request.POST['birthday'])
         child.save()
-        print(request.GET)
-        return HttpResponseRedirect('/apply_2_2')
+        return JsonResponse({'course': request.POST['course'], 'subject': request.POST['subject'],
+                             'time': request.POST['time'], 'childName': request.POST['childName']}, )
 
     else:
         tmp = request.GET
-        return render(request, 'pages/register.html', {'course': tmp.get('course'), 'subject': tmp.get('subject'), 'time': tmp.get('time')})
-
-
-def apply_2_2(request):
-    print(request.POST)
-    return render(request, 'pages/appplyCheck.html', {'course': request.GET.get('course'), 'subject': request.GET.get('subject')})
+        return render(request, 'pages/register.html',
+                      {'course': tmp.get('course'), 'subject': tmp.get('subject'), 'time': tmp.get('time')})
 
 
 def apply_1(request):
@@ -66,12 +44,36 @@ def apply_1(request):
     return render(request, 'pages/apply_1.html',
                   {'course': course, 'courseName': request.GET.get('course'),
                    'subject': subject, 'subjectName': request.GET.get('subject'),
-                   'time': time, 'timeValue': request.GET.get('time')
-                   })
+                   'time': time, 'timeValue': request.GET.get('time')})
 
 
+def applyCheck(request):
+    tmp = request.GET
+    return render(request, 'pages/applyCheck.html',
+                  {'member': request.user, 'course': tmp.get('course'), 'subject': tmp.get('subject'),
+                   'time': tmp.get('time'), 'childName': tmp.get('childName')})
+
+
+@csrf_exempt
+def MemberLogin(request):
+    print(request.POST)
+    email = request.POST['email']
+    password = request.POST['password']
+    member = authenticate(email=email, password=password,)
+    if member is not None:
+        login(request, member)
+        child = ChildMember.objects.filter(memberName__memberName=request.user.memberName).values_list('childName', flat=True)
+        return JsonResponse({'course': request.POST['course'], 'subject': request.POST['subject'], 'time': request.POST['time'],
+                             'childName': child[0]})
+    else:
+        return JsonResponse({'result': 'error'})
+
+
+@csrf_exempt
 def payment_result(request):
-    return render(request, 'pages/payment_result.html')
+    tmp = request.GET
+    return render(request, 'pages/payment_result.html', {'name': tmp.get('name')})
+
 # class CreateApplyForm(FormView):
 #     template_name = 'pages/apply_1.html'
 #     # success_url = '/pages/payment_2.html'

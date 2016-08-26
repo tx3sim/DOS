@@ -17,7 +17,7 @@ from django.conf.urls import url
 from django.contrib import admin
 
 from courses.views import maker, getTimetable, altCourse, altClass
-from members.views import apply_2_1, apply_1, apply_2_2, payment_result
+from members.views import apply_2, apply_1, payment_result, applyCheck, MemberLogin
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -25,8 +25,9 @@ urlpatterns = [
     url(r'^tt$', getTimetable),
     url(r'^altCourse$', altCourse),
     url(r'^altClass$', altClass),
-    url(r'^apply_2_1$', apply_2_1),
-    url(r'^apply_2_2$', apply_2_2),
+    url(r'^apply_2$', apply_2),
     url(r'^apply_1$', apply_1),
+    url(r'^login$', MemberLogin),
+    url(r'^applyCheck$', applyCheck),
     url(r'^payment_result$', payment_result)
 ]

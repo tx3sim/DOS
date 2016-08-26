@@ -9,17 +9,18 @@ $(document).ready(function () {
     var module = {moduleName: moduleName};
     var course = "Starter";
 
-    if(moduleName) {
+    if (moduleName) {
         if (moduleName[1] == "M")
             course = "Maker";
         else if (moduleName[1] == "C")
             course = "Creator";
     }
 
-    getTimetable(module, course);
+    if ($('.tab'))
+        getTimetable(module, course);
 
-    var IMP = window.IMP;
-    IMP.init('imp10434785'); // iamport -> 가맹점식별코드
+    // var IMP = window.IMP;
+    // IMP.init('imp10434785'); // iamport -> 가맹점식별코드
 
 
     $('.tab').click(function () {
@@ -107,7 +108,7 @@ $(document).ready(function () {
                 msg += '결제 금액 : ' + rsp.paid_amount;
                 msg += '카드 승인번호 : ' + rsp.apply_num;
                 alert(msg);
-                window.location.href = '/payment_result';
+                window.location.href = '/payment_result?name=' + rsp.name + '&applyNum=' + rsp.apply_num + '&amount=' + rsp.paid_amount
             } else {
                 var msg = '결제에 실패하였습니다.';
                 msg += '에러내용 : ' + rsp.error_msg;
@@ -116,24 +117,54 @@ $(document).ready(function () {
         });
     });
 
-    if($('.btn_register')) {
+    if ($('.btn_register'))
         $('.btn_register').css('cursor', 'pointer');
-    }
-    if($('.btn_pay_ok')) {
+    if ($('.btn_pay_ok'))
         $('.btn_pay_ok').css('cursor', 'pointer');
-    }
     $('.btn_prev').css('cursor', 'pointer');
     $('.btn_next').css('cursor', 'pointer');
 
-    $('.btn_register').click(function() {
-        window.location.href = "apply_2_1?course=" + courseSelect.val() + "&subject=" + subjectSelect.val() + "&time=" + timeSelect.val()
+    $('.btn_register').click(function () {
+        window.location.href = "apply_2?course=" + courseSelect.val() + "&subject=" + subjectSelect.val() + "&time=" + timeSelect.val()
     });
 
-    $('.btn_prev').click(function() {
+    $('.btn_prev').click(function () {
         parent.history.back();
-		return false;
+        return false;
     });
+
+    $('.form_register').submit(function () {
+        if ($('.input_password1').val() == $('.input_password2').val()) {
+            $.ajax({
+                type: 'POST',
+                url: 'apply_2',
+                data: $(this).serialize(),
+                success: function (data) {
+                    window.location.href = '/applyCheck?course=' + data.course + '&subject=' + data.subject + '&time=' + data.time + '&childName=' + data.childName;
+                }
+            })
+        }
+        else
+            alert("비밀번호를 확인해주세요!");
+    });
+
+    $('.form_login').submit(function() {
+        $.ajax({
+            type: 'POST',
+            url: '/login',
+            data: $(this).serialize(),
+            success: function(data) {
+                console.log(data);
+                if(data.result == 'error')
+                    alert('이메일 주소 또는 비밀번호가 올바르지 않습니다');
+                else {
+                    window.location.href = '/applyCheck?course=' + data.course + '&subject=' + data.subject + '&time=' + data.time + '&childName=' + data.childName;
+                }
+            }
+        })
+    })
 });
+
 
 var getTimetable = function (module, course) {
     $('.apply').children().remove();
@@ -154,10 +185,10 @@ var getTimetable = function (module, course) {
                 applyTd.append(appendSubject);
                 applyTd.css('color', '#ffffff');
                 applyTd.css('background-color', 'rgba(243,166,180,0.60)');
-                applyTd.mouseleave(function() {
+                applyTd.mouseleave(function () {
                     $(this).css('background-color', 'rgba(243,166,180,0.60)')
                 });
-                applyTd.mouseover(function() {
+                applyTd.mouseover(function () {
                     $(this).css('background-color', '#F3A6B4');
                 });
             }
