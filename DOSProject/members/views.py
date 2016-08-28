@@ -5,17 +5,34 @@ from django.contrib.auth import authenticate, login
 from django.views.decorators.csrf import csrf_exempt
 
 from courses.models import SemesterSubject, Subject, Course
-from members.models import Member, ChildMember
+from members.models import Member, ChildMember, ChildMemberSubject, Payment
+
+
+def apply_1(request):
+    course = Course.objects.all().values('name')
+    subject = Subject.objects.filter(module__course__name=request.GET.get('course')).values("name")
+    if request.GET.get('time'):
+        time = SemesterSubject.objects.filter(subject__name=request.GET.get('subject')).values("time")
+    else:
+        time = None
+    return render(request, 'pages/makerApply_1.html',
+                  {'course': course, 'courseName': request.GET.get('course'),
+                   'subject': subject, 'subjectName': request.GET.get('subject'),
+                   'time': time, 'timeValue': request.GET.get('time')})
 
 
 @csrf_exempt
 def apply_2(request):
     if request.POST:
+        if request.POST['path'] == '검색':
+            path = request.POST['path'] + ' - ' + request.POST['keyword']
+        else:
+            path = request.POST['path']
         member = Member.objects.create_user(request.POST['email'],
                                             request.POST['memberName'],
                                             request.POST['phoneNumber'],
                                             request.POST['address'],
-                                            request.POST['path'])
+                                            path)
         member.set_password(request.POST['password1'])
         member.save()
         new_member = authenticate(email=request.POST['email'],
@@ -30,49 +47,79 @@ def apply_2(request):
 
     else:
         tmp = request.GET
-        return render(request, 'pages/register.html',
+        return render(request, 'pages/makerApply_2.html',
                       {'course': tmp.get('course'), 'subject': tmp.get('subject'), 'time': tmp.get('time')})
 
 
-def apply_1(request):
-    course = Course.objects.all().values('name')
-    subject = Subject.objects.filter(module__course__name=request.GET.get('course')).values("name")
-    if request.GET.get('time'):
-        time = SemesterSubject.objects.filter(subject=request.GET.get('subject')).values("time")
-    else:
-        time = None
-    return render(request, 'pages/apply_1.html',
-                  {'course': course, 'courseName': request.GET.get('course'),
-                   'subject': subject, 'subjectName': request.GET.get('subject'),
-                   'time': time, 'timeValue': request.GET.get('time')})
-
-
-def applyCheck(request):
+@csrf_exempt
+def apply_3_1(request):
     tmp = request.GET
-    return render(request, 'pages/applyCheck.html',
+    child = ChildMember.objects.filter(memberName__memberName=request.user.memberName).values('childName')
+    return render(request, 'pages/makerApply_3_1.html',
                   {'member': request.user, 'course': tmp.get('course'), 'subject': tmp.get('subject'),
-                   'time': tmp.get('time'), 'childName': tmp.get('childName')})
+                   'time': tmp.get('time'), 'child': child, 'childName': child[0].get('childName')})
+
+
+@csrf_exempt
+def apply_3_1_1(request):
+    tmp = request.GET
+    if request.POST:
+        child = ChildMember.objects.create(memberName=request.user, childName=request.POST['childName'],
+                                           gender=request.POST['gender'], school=request.POST['school'],
+                                           experience=request.POST['experience'], birthday=request.POST['birthday'])
+        child.save()
+        return JsonResponse({'subject': request.POST['subject'], 'time': request.POST['time']})
+    else:
+        return render(request, 'pages/makerApply_3_1_1.html', {'subject': tmp.get('subject'), 'time': tmp.get('time')})
+
+
+@csrf_exempt
+def apply_3_2(request):
+    tmp = request.GET
+    if request.POST:
+        subject = SemesterSubject.objects.filter(subject__name=request.POST['subject'],
+                                                 time=request.POST['time']).values_list(
+            'subject__module__course__name', 'subject__name', 'time', 'semester__name')
+
+        info = {'memberName': request.user.memberName, 'email': request.user.email,
+                'phoneNumber': request.user.phoneNumber, 'address': request.user.address,
+                'course': subject[0][0], 'subject': subject[0][1], 'time': subject[0][2], 'semester': subject[0][3]}
+        return JsonResponse(info)
+    else:
+        child = ChildMember.objects.filter(memberName__memberName=request.user.memberName).values('childName')
+        return render(request, 'pages/makerApply_3_2.html',
+                      {'member': request.user, 'course': tmp.get('course'), 'subject': tmp.get('subject'),
+                       'time': tmp.get('time'), 'child': child, 'childName': tmp.get('childName')})
 
 
 @csrf_exempt
 def MemberLogin(request):
-    print(request.POST)
     email = request.POST['email']
     password = request.POST['password']
-    member = authenticate(email=email, password=password,)
+    member = authenticate(email=email, password=password, )
     if member is not None:
         login(request, member)
-        child = ChildMember.objects.filter(memberName__memberName=request.user.memberName).values_list('childName', flat=True)
-        return JsonResponse({'course': request.POST['course'], 'subject': request.POST['subject'], 'time': request.POST['time'],
-                             'childName': child[0]})
+        return JsonResponse(
+            {'course': request.POST['course'], 'subject': request.POST['subject'], 'time': request.POST['time']})
     else:
         return JsonResponse({'result': 'error'})
 
 
 @csrf_exempt
 def payment_result(request):
-    tmp = request.GET
-    return render(request, 'pages/payment_result.html', {'name': tmp.get('name')})
+    if request.POST:
+        child = ChildMember.objects.get(memberName__memberName=request.user.memberName, childName=request.POST['childName'])
+        subject = SemesterSubject.objects.get(subject__name=request.POST['subject'], time=request.POST['time'])
+        childMemberSubject = ChildMemberSubject.objects.create(childName=child, subject=subject)
+        payment = Payment.objects.create(memberName=request.user)
+        childMemberSubject.save()
+        payment.save()
+        return JsonResponse({'result': 'success'})
+    else:
+        tmp = request.GET
+        return render(request, 'pages/payment_result.html',
+                      {'name': tmp.get('name'), 'applyNum': tmp.get('applyNum'), 'amount': tmp.get('amount'),
+                       'childName': tmp.get('childName')})
 
 # class CreateApplyForm(FormView):
 #     template_name = 'pages/apply_1.html'

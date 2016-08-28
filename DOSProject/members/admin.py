@@ -4,7 +4,7 @@ from django.contrib.auth.models import Group
 from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 from django.contrib.auth.forms import ReadOnlyPasswordHashField
 
-from members.models import Member, ChildMember, ChildMemberSubject
+from members.models import Member, ChildMember, ChildMemberSubject, Payment
 
 
 class UserCreationForm(forms.ModelForm):
@@ -95,6 +95,7 @@ class ChildMemberSubjectAdmin(admin.ModelAdmin):
 admin.site.register(ChildMember, ChildMemberAdmin)
 admin.site.register(ChildMemberSubject, ChildMemberSubjectAdmin)
 admin.site.register(Member, MemberAdmin)
+admin.site.register(Payment)
 # ... and, since we're not using Django's built-in permissions,
 # unregister the Group model from admin.
 admin.site.unregister(Group)

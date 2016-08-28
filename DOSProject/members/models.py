@@ -130,3 +130,7 @@ class ChildMember(models.Model):
 class ChildMemberSubject(models.Model):
     childName = models.ForeignKey(ChildMember)
     subject = models.ForeignKey(SemesterSubject)
+
+
+class Payment(models.Model):
+    memberName = models.ForeignKey(Member)
