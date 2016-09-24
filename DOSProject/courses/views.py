@@ -1,8 +1,7 @@
 import json
 
-from django.core import serializers
 from django.core.serializers.json import DjangoJSONEncoder
-from django.http import JsonResponse, HttpResponse
+from django.http import JsonResponse
 from django.shortcuts import render
 from django.views.decorators.csrf import csrf_exempt
 
@@ -17,8 +16,8 @@ def maker(request):
 @csrf_exempt
 def altCourse(request):
     if request.POST:
-        tmp = request.POST
-        courseName = tmp.get("course", "0")
+        course = request.POST
+        courseName = course.get("course", "0")
         return JsonResponse(json.dumps(
             list(SemesterSubject.objects.filter(subject__module__course__name=courseName).values('subject__name')),
             cls=DjangoJSONEncoder), safe=False)
@@ -27,8 +26,8 @@ def altCourse(request):
 @csrf_exempt
 def altClass(request):
     if request.POST:
-        tmp = request.POST
-        subjectName = tmp.get('subjectName', '0')
+        subject = request.POST
+        subjectName = subject.get('subjectName', '0')
         return JsonResponse(json.dumps(
             list(SemesterSubject.objects.filter(subject__name=subjectName).values('time')),
             cls=DjangoJSONEncoder), safe=False)

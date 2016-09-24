@@ -1,9 +1,8 @@
 from django.http import JsonResponse
 from django.shortcuts import render
 from django.contrib.auth import authenticate, login
-# Create your views here.
 from django.views.decorators.csrf import csrf_exempt
-
+# Create your views here.
 from courses.models import SemesterSubject, Subject, Course
 from members.models import Member, ChildMember, ChildMemberSubject, Payment
 

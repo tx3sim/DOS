@@ -91,11 +91,10 @@ class ChildMemberAdmin(admin.ModelAdmin):
 class ChildMemberSubjectAdmin(admin.ModelAdmin):
     model = ChildMemberSubject
     list_display = ['childName', 'subject']
+
 # Now register the new UserAdmin...
 admin.site.register(ChildMember, ChildMemberAdmin)
 admin.site.register(ChildMemberSubject, ChildMemberSubjectAdmin)
 admin.site.register(Member, MemberAdmin)
 admin.site.register(Payment)
-# ... and, since we're not using Django's built-in permissions,
-# unregister the Group model from admin.
 admin.site.unregister(Group)

@@ -5,6 +5,7 @@ $(document).ready(function () {
     var courseSelect = $('.courseSelect');
     var subjectSelect = $('.subjectSelect');
     var timeSelect = $('.timeSelect');
+
     var moduleName = $('.moduleName').find('strong').html();
     var module = {moduleName: moduleName};
     var course = "Starter";
@@ -53,9 +54,8 @@ $(document).ready(function () {
                             if ($(this).html() == subjectName)
                                 isOverlap = true;
                         });
-                        if (!isOverlap) {
+                        if (!isOverlap)
                             subjectSelect.append($("<option value='" + subjectName + "'>" + subjectName + "</option>"));
-                        }
                     }
                 }
             })
@@ -79,6 +79,7 @@ $(document).ready(function () {
             })
         }
     });
+    
 
     $('.btn_pay_ok').click(function () {
         var subject = $('.applySubject').html().replace(/\s/g,'').replace(/\n/g,'');
@@ -140,14 +141,7 @@ $(document).ready(function () {
             }
         });
     });
-
-    if ($('.btn_register'))
-        $('.btn_register').css('cursor', 'pointer');
-    if ($('.btn_pay_ok'))
-        $('.btn_pay_ok').css('cursor', 'pointer');
-    $('.btn_prev').css('cursor', 'pointer');
-    $('.btn_next').css('cursor', 'pointer');
-    $('.btn_newChild').css('cursor', 'pointer');
+    
 
     $('.btn_register').click(function () {
         if(subjectSelect.val() != subjectSelect.find('option:first').val() && timeSelect.val() != timeSelect.find('option:first').val())
@@ -180,7 +174,6 @@ $(document).ready(function () {
             url: 'apply_3_1_1',
             data: $(this).serialize(),
             success: function(data) {
-                console.log(data);
                 window.location.href = 'apply_3_1?subject=' + data.subject + '&time=' + data.time;
             }
         })
@@ -245,4 +238,12 @@ var getTimetable = function (module, course) {
             }
         }
     });
+    
+    if ($('.btn_register'))
+        $('.btn_register').css('cursor', 'pointer');
+    if ($('.btn_pay_ok'))
+        $('.btn_pay_ok').css('cursor', 'pointer');
+    $('.btn_prev').css('cursor', 'pointer');
+    $('.btn_next').css('cursor', 'pointer');
+    $('.btn_newChild').css('cursor', 'pointer');
 };
