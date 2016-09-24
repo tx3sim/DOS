@@ -10,7 +10,7 @@ from courses.models import SemesterSubject
 
 
 def maker(request):
-    return render(request, 'pages/maker.html')
+    return render(request, 'pages/courses/../members/templates/pages/maker.html')
 
 
 @csrf_exempt

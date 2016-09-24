@@ -1,25 +1,896 @@
 .iu-center-box {
   width:960px;
 }
-.iu-page {
+.index {
   min-width:960px;
 }
-.page-content {
+.Header {
+  background-color:#F7F7F7;
+  color:#333333;
+  height:228px;
+  min-width:960px;
+  position:relative;
+  width:100%;
+}
+.CenterBox_7 {
   background-color:#FFFFFF;
+  background-position:center center;
+  background-size:100% 100%;
+  color:#000000;
 }
-.section {
-  height:720px;
+.CenterBox_7.iux-hover, .CenterBox_7.iux-active {
+  color:#000000;
 }
-.text-11 {
-  bottom:0px;
-  color:#B4B4B4;
-  font-family:'Helvetica', sans-serif;
-  font-size:36px;
-  height:50px;
+.box-925 {
+  height:26px;
   left:0px;
-  margin-bottom:auto;
-  margin-top:auto;
-  text-align:center;
+  margin-left:auto;
+  margin-right:auto;
+  right:0px;
+  top:196px;
+  width:734px;
+}
+.Text_50 {
+  color:#8A8A8A;
+  float:left;
+  font-family:'Helvetica', sans-serif;
+  font-size:14px;
+  font-weight:400;
+  height:25px;
+  margin-left:12px;
+  margin-top:0px;
+  position:relative;
+  width:82px;
+}
+.Text_47 {
+  color:#8A8A8A;
+  float:left;
+  font-family:'Helvetica', sans-serif;
+  font-size:14px;
+  height:25px;
+  margin-left:28px;
+  margin-top:0px;
+  position:relative;
+  width:80px;
+}
+.Text_22 {
+  color:#8A8A8A;
+  float:left;
+  font-family:'Helvetica', sans-serif;
+  font-size:14px;
+  height:25px;
+  margin-left:28px;
+  margin-top:0px;
+  position:relative;
+  width:52px;
+}
+.Text_23 {
+  color:#8A8A8A;
+  float:left;
+  font-family:'Helvetica', sans-serif;
+  font-size:14px;
+  height:25px;
+  margin-left:28px;
+  margin-top:0px;
+  position:relative;
+  width:132px;
+}
+.Text_24 {
+  color:#8A8A8A;
+  float:left;
+  font-family:'Helvetica', sans-serif;
+  font-size:14px;
+  height:25px;
+  margin-left:28px;
+  margin-top:0px;
+  position:relative;
+  width:68px;
+}
+.Text_26 {
+  color:#8A8A8A;
+  float:left;
+  font-family:'Helvetica', sans-serif;
+  font-size:14px;
+  height:25px;
+  margin-left:28px;
+  margin-top:0px;
+  position:relative;
+  width:52px;
+}
+.Text_27 {
+  color:#8A8A8A;
+  float:left;
+  font-family:'Helvetica', sans-serif;
+  font-size:14px;
+  height:25px;
+  margin-left:28px;
+  margin-top:0px;
+  position:relative;
+  width:88px;
+}
+.Text_28 {
+  color:#494949;
+  font-family:'Helvetica', sans-serif;
+  font-size:14px;
+  font-weight:700;
+  height:25px;
+  left:846px;
+  top:54px;
+  width:44px;
+}
+.Text_28.iux-hover, .Text_28.iux-active {
+  color:#EF8721;
+}
+.Text_242 {
+  color:#494949;
+  font-family:'Helvetica', sans-serif;
+  font-size:14px;
+  font-weight:700;
+  height:25px;
+  left:892px;
+  top:54px;
+  width:8px;
+}
+.Text_241 {
+  color:#494949;
+  font-family:'Helvetica', sans-serif;
+  font-size:14px;
+  font-weight:700;
+  height:25px;
+  left:904px;
+  top:54px;
+  width:49px;
+}
+.Text_241.iux-hover, .Text_241.iux-active {
+  color:#EF8721;
+}
+.FloatingImage {
+  background-image:url('/resource/project/dlab_logo.png');
+  background-position:center center;
+  background-size:contain;
+  height:102px;
+  left:0px;
+  margin-left:auto;
+  margin-right:auto;
+  right:0px;
+  top:66px;
+  width:276px;
+}
+.HTML_300 {
+  height:94px;
+  left:71px;
+  top:530px;
+  width:100px;
+}
+.Box_301 {
+  background-color:#EF8721;
+  background-position:center;
+  height:38px;
+  left:0px;
   top:0px;
   width:100%;
+}
+.text-447 {
+  color:#FFFFFF;
+  height:24px;
+  left:0px;
+  margin-left:auto;
+  margin-right:auto;
+  right:0px;
+  text-align:center;
+  top:7px;
+  width:549px;
+}
+.Image_302 {
+  background-image:url('/resource/project/text_label_ani_k.gif');
+  height:38px;
+  left:619px;
+  top:0px;
+  width:76px;
+}
+.PageContent {
+  background-color:#F7F7F7;
+}
+.Section {
+  height:493px;
+}
+.Carousel > .iux-carousel-next {
+  background-image:url('/resource/project/hp_right_arrow_wh.png');
+  height:36px;
+  right:10px;
+  top:229px;
+  width:28px;
+}
+.Carousel > .iux-carousel-prev {
+  background-image:url('/resource/project/hp_left_arrow_wh.png');
+  height:36px;
+  left:10px;
+  top:229px;
+  width:28px;
+}
+.Carousel > .iux-carousel-pager {
+  bottom:30px;
+  text-align:center;
+  visibility:visible;
+}
+.Carousel > .iux-carousel-pager > li:hover,.Carousel > .iux-carousel-pager > li.iux-active {
+  background-color:#000000;
+}
+.Carousel> .iux-carousel-pager > li {
+  background-color:#929292;
+  border-radius:6px;
+  margin:6px;
+  padding:6px;
+}
+.Carousel > .iux-carousel-prev,.Carousel > .iux-carousel-next {
+  display:inherit;
+}
+.Carousel {
+  background-position:center;
+  height:493px;
+  left:0px;
+  top:0px;
+  width:960px;
+}
+.CarouselItem {
+  background-image:url('/resource/project/2016_07_regular_course_carousel_160628.jpg');
+  background-position:center top;
+  background-size:cover;
+  height:100%;
+  position:relative;
+}
+.Box_109 {
+  background-image:url('/resource/project/2016_09_regular_carousel_1.jpg');
+  height:493px;
+  left:0px;
+  top:0px;
+  width:960px;
+}
+.text-112 {
+  color:#FFFFFF;
+  font-family:'Noto Sans KR', sans-serif;
+  font-size:20px;
+  font-weight:400;
+  height:60px;
+  left:0px;
+  margin-left:auto;
+  margin-right:auto;
+  right:0px;
+  text-align:center;
+  top:103px;
+  width:339px;
+}
+.text-113 {
+  color:#FFFFFF;
+  font-family:'Noto Sans KR', sans-serif;
+  font-size:48px;
+  font-weight:700;
+  height:173px;
+  left:0px;
+  letter-spacing:-0.6px;
+  line-height:1.20;
+  margin-left:auto;
+  margin-right:auto;
+  right:0px;
+  text-align:center;
+  top:171px;
+  width:339px;
+}
+.text-114 {
+  color:#FFFFFF;
+  font-family:'Nanum Gothic', sans-serif;
+  font-size:18px;
+  font-weight:700;
+  height:60px;
+  left:0px;
+  letter-spacing:0px;
+  line-height:1.40;
+  margin-left:auto;
+  margin-right:auto;
+  right:0px;
+  text-align:center;
+  top:364px;
+  width:339px;
+}
+.CarouselItem_30 {
+  background-image:url('/resource/project/2016summercamp_homepage_160726_4.jpg');
+  background-position:center top;
+  background-size:cover;
+  height:100%;
+  position:relative;
+}
+.Box_114 {
+  background-image:url('/resource/project/2016_09_regular_carousel_2.jpg');
+  height:493px;
+  left:0px;
+  top:0px;
+  width:960px;
+}
+.Cell_113 {
+  background-color:rgba(255,255,255,0.90);
+  background-position:center;
+  bottom:60px;
+  color:#FF6D00;
+  font-family:'Noto Sans KR', sans-serif;
+  font-size:22px;
+  font-weight:400;
+  height:40px;
+  right:62px;
+  text-align:center;
+  width:420px;
+}
+.Cell_113 > a {
+  line-height:40px;
+}
+.Cell_112 {
+  background-color:rgba(255,134,42,0.90);
+  background-position:center;
+  bottom:110px;
+  color:#FFFFFF;
+  font-family:'Noto Sans KR', sans-serif;
+  font-size:22px;
+  font-weight:400;
+  height:40px;
+  right:156px;
+  text-align:center;
+  width:400px;
+}
+.Cell_112 > a {
+  line-height:40px;
+}
+.carousel-item {
+  height:100%;
+  position:relative;
+}
+.box-111 {
+  background-image:url('/resource/project/js_carousel_160818.jpg');
+  height:493px;
+  left:0px;
+  top:0px;
+  width:960px;
+}
+.Section_97 {
+  height:80px;
+}
+.CenterBox_97 {
+  background-color:#FFFFFF;
+}
+.HTML {
+  bottom:0px;
+  height:50px;
+  left:0px;
+  margin:auto;
+  right:0px;
+  top:0px;
+  width:532px;
+}
+.Section_104 {
+  display:none;
+  height:160px;
+}
+.CenterBox_104 {
+  background-color:#DBDBDB;
+}
+.Form {
+  background-color:#E6E6E6;
+  border-radius:5px;
+  border-width:0px;
+  height:42px;
+  left:118px;
+  top:67px;
+  width:720px;
+}
+.TextField {
+  background-color:#E6E6E6;
+  border-radius:10px;
+  color:#6D6D6D;
+  font-family:'Helvetica', sans-serif;
+  font-size:14px;
+  height:41px;
+  left:0px;
+  padding-left:8px;
+  padding-right:8px;
+  top:0px;
+  width:498px;
+}
+.Button {
+  background-color:#80C8FF;
+  border-color:#80C8FF;
+  border-width:1px;
+  color:#FFFFFF;
+  font-family:'Nanum Gothic', sans-serif;
+  font-size:14px;
+  height:42px;
+  right:0px;
+  top:0px;
+  width:206px;
+}
+.Text_79 {
+  color:#6D6D6D;
+  font-family:'Nanum Gothic', sans-serif;
+  font-size:14px;
+  height:24px;
+  left:110px;
+  text-align:center;
+  top:37px;
+  width:737px;
+}
+.Section_29 {
+  height:470px;
+}
+.CenterBox {
+  background-color:#FFFFFF;
+}
+.Text_81 {
+  color:#EF8721;
+  font-family:'HelveticaNeue-Light','Helvetica Neue Light', sans-serif;
+  font-size:40px;
+  font-weight:400;
+  height:69px;
+  left:314px;
+  text-align:center;
+  top:39px;
+  width:333px;
+}
+.Box {
+  background-color:#8FD830;
+  height:140px;
+  left:50px;
+  top:118px;
+  width:280px;
+}
+.Text_82 {
+  color:#216E37;
+  font-family:'Nanum Gothic', sans-serif;
+  font-size:24px;
+  height:64px;
+  left:19px;
+  letter-spacing:-0.5px;
+  line-height:1.30;
+  top:69px;
+  width:199px;
+}
+.Image_101 {
+  background-image:url('/resource/project/hp_courses_title_starter.png');
+  background-size:cover;
+  height:65px;
+  left:0px;
+  top:0px;
+  width:280px;
+}
+.Box_81 {
+  background-color:#75BC18;
+  height:176px;
+  left:50px;
+  top:258px;
+  width:280px;
+}
+.Text_83 {
+  color:#FFFFFF;
+  font-family:'Nanum Gothic', sans-serif;
+  font-size:16px;
+  height:49px;
+  left:20px;
+  letter-spacing:-0.3px;
+  line-height:1.40;
+  top:12px;
+  width:243px;
+}
+.Text_86 {
+  color:#FFFFFF;
+  font-family:'Nanum Gothic', sans-serif;
+  font-size:16px;
+  height:49px;
+  left:20px;
+  letter-spacing:-0.3px;
+  line-height:1.40;
+  top:62px;
+  width:243px;
+}
+.Text_88 {
+  color:#FFFFFF;
+  font-family:'Nanum Gothic', sans-serif;
+  font-size:16px;
+  height:49px;
+  left:20px;
+  letter-spacing:-0.3px;
+  line-height:1.40;
+  top:112px;
+  width:243px;
+}
+.Box_95 {
+  background-color:#84C5EB;
+  height:140px;
+  left:340px;
+  top:118px;
+  width:280px;
+}
+.Text_97 {
+  color:#103772;
+  font-family:'Nanum Gothic', sans-serif;
+  font-size:24px;
+  height:64px;
+  left:20px;
+  letter-spacing:-0.5px;
+  line-height:1.30;
+  top:68px;
+  width:199px;
+}
+.Image {
+  background-image:url('/resource/project/hp_courses_title_creator.png');
+  background-size:cover;
+  height:65px;
+  left:0px;
+  top:0px;
+  width:280px;
+}
+.Box_98 {
+  background-color:#4FA2E1;
+  height:176px;
+  left:340px;
+  top:258px;
+  width:280px;
+}
+.Text_99 {
+  color:#FFFFFF;
+  font-family:'Nanum Gothic', sans-serif;
+  font-size:16px;
+  height:49px;
+  left:21px;
+  letter-spacing:-0.3px;
+  line-height:1.50;
+  top:10px;
+  width:256px;
+}
+.Text_100 {
+  color:#FFFFFF;
+  font-family:'Nanum Gothic', sans-serif;
+  font-size:16px;
+  height:49px;
+  left:20px;
+  letter-spacing:-0.3px;
+  line-height:1.40;
+  top:62px;
+  width:243px;
+}
+.Text_101 {
+  color:#FFFFFF;
+  font-family:'Nanum Gothic', sans-serif;
+  font-size:16px;
+  height:49px;
+  left:20px;
+  letter-spacing:-0.3px;
+  line-height:1.50;
+  top:110px;
+  width:243px;
+}
+.Box_97 {
+  background-color:#F9B5CB;
+  height:140px;
+  left:630px;
+  top:118px;
+  width:280px;
+}
+.Text_98 {
+  color:#9B1D45;
+  font-family:'Nanum Gothic', sans-serif;
+  font-size:24px;
+  height:64px;
+  left:19px;
+  letter-spacing:-0.5px;
+  line-height:1.30;
+  top:69px;
+  width:240px;
+}
+.Image_102 {
+  background-image:url('/resource/project/hp_courses_title_maker.png');
+  background-size:cover;
+  height:65px;
+  left:0px;
+  top:0px;
+  width:280px;
+}
+.Box_101 {
+  background-color:#F38DAC;
+  height:176px;
+  left:630px;
+  top:258px;
+  width:280px;
+}
+.Text_102 {
+  color:#FFFFFF;
+  font-family:'Nanum Gothic', sans-serif;
+  font-size:16px;
+  height:146px;
+  left:20px;
+  letter-spacing:-0.3px;
+  line-height:1.50;
+  top:10px;
+  width:257px;
+}
+.Section_80 {
+  height:460px;
+}
+.CenterBox_80 {
+  background-color:#FFFFFF;
+}
+.Text_85 {
+  color:#EF8721;
+  font-family:'HelveticaNeue-Light','Helvetica Neue Light', sans-serif;
+  font-size:40px;
+  font-weight:400;
+  height:69px;
+  left:314px;
+  text-align:center;
+  top:24px;
+  width:333px;
+}
+.Text_89 {
+  color:#969696;
+  font-family:'Nanum Gothic', sans-serif;
+  font-size:16px;
+  font-weight:400;
+  height:26px;
+  left:75px;
+  text-align:center;
+  top:416px;
+  width:351px;
+}
+.Text_90 {
+  color:#969696;
+  font-family:'Nanum Gothic', sans-serif;
+  font-size:16px;
+  font-weight:400;
+  height:26px;
+  left:542px;
+  text-align:center;
+  top:416px;
+  width:333px;
+}
+.WebMovie {
+  background-size:100% 100%;
+  height:300px;
+  left:50px;
+  top:109px;
+  width:400px;
+}
+.WebMovie_88 {
+  height:300px;
+  left:509px;
+  top:109px;
+  width:400px;
+}
+.Section_84 {
+  height:430px;
+}
+.CenterBox_84 {
+  background-color:#FFFFFF;
+}
+.Text_87 {
+  color:#969696;
+  font-family:'Nanum Gothic', sans-serif;
+  font-size:18px;
+  font-weight:400;
+  height:274px;
+  left:133px;
+  line-height:1.60;
+  top:117px;
+  width:698px;
+}
+.Text_75 {
+  color:#EF8721;
+  font-family:'HelveticaNeue-Light','Helvetica Neue Light', sans-serif;
+  font-size:40px;
+  font-weight:400;
+  height:69px;
+  left:314px;
+  text-align:center;
+  top:28px;
+  width:333px;
+}
+.Footer {
+  background-color:#F7F7F7;
+  height:274px;
+  position:relative;
+  width:100%;
+}
+.CenterBox_27 {
+  background-color:#242424;
+}
+.Text {
+  color:#848484;
+  font-family:'HelveticaNeue-Light','Helvetica Neue Light', sans-serif;
+  font-size:16px;
+  font-weight:400;
+  height:28px;
+  left:420px;
+  top:71px;
+  width:85px;
+}
+.Text_52 {
+  color:#848484;
+  font-family:'HelveticaNeue-Light','Helvetica Neue Light', sans-serif;
+  font-size:16px;
+  font-weight:400;
+  height:28px;
+  left:420px;
+  top:147px;
+  width:85px;
+}
+.Text_53 {
+  color:#848484;
+  font-family:'HelveticaNeue-Light','Helvetica Neue Light', sans-serif;
+  font-size:16px;
+  font-weight:400;
+  height:28px;
+  left:420px;
+  top:109px;
+  width:85px;
+}
+.Text_54 {
+  color:#848484;
+  font-family:'HelveticaNeue-Light','Helvetica Neue Light', sans-serif;
+  font-size:20px;
+  font-weight:400;
+  height:30px;
+  left:301px;
+  top:29px;
+  width:154px;
+}
+.Text_55 {
+  color:#848484;
+  font-family:'HelveticaNeue-Light','Helvetica Neue Light', sans-serif;
+  font-size:16px;
+  font-weight:400;
+  height:28px;
+  left:73px;
+  top:71px;
+  width:154px;
+}
+.Text_56 {
+  color:#848484;
+  font-family:'HelveticaNeue-Light','Helvetica Neue Light', sans-serif;
+  font-size:16px;
+  font-weight:400;
+  height:28px;
+  left:54px;
+  top:229px;
+  width:512px;
+}
+.Text_57 {
+  color:#848484;
+  font-family:'HelveticaNeue-Light','Helvetica Neue Light', sans-serif;
+  font-size:16px;
+  font-weight:400;
+  height:28px;
+  left:73px;
+  top:147px;
+  width:154px;
+}
+.Text_58 {
+  color:#848484;
+  font-family:'HelveticaNeue-Light','Helvetica Neue Light', sans-serif;
+  font-size:16px;
+  font-weight:400;
+  height:28px;
+  left:73px;
+  top:109px;
+  width:154px;
+}
+.Text_59 {
+  color:#848484;
+  font-family:'HelveticaNeue-Light','Helvetica Neue Light', sans-serif;
+  font-size:20px;
+  font-weight:400;
+  height:30px;
+  left:73px;
+  top:29px;
+  width:154px;
+}
+.Text_60 {
+  color:#848484;
+  font-family:'HelveticaNeue-Light','Helvetica Neue Light', sans-serif;
+  font-size:16px;
+  font-weight:400;
+  height:28px;
+  left:301px;
+  top:71px;
+  width:85px;
+}
+.Text_61 {
+  color:#848484;
+  font-family:'HelveticaNeue-Light','Helvetica Neue Light', sans-serif;
+  font-size:16px;
+  font-weight:400;
+  height:28px;
+  left:301px;
+  top:147px;
+  width:85px;
+}
+.Text_62 {
+  color:#848484;
+  font-family:'HelveticaNeue-Light','Helvetica Neue Light', sans-serif;
+  font-size:16px;
+  font-weight:400;
+  height:28px;
+  left:301px;
+  top:109px;
+  width:85px;
+}
+.Box_63 {
+  background-color:#848484;
+  height:1px;
+  left:50px;
+  top:211px;
+  width:858px;
+}
+.Box_64 {
+  background-color:#848484;
+  height:1px;
+  left:279px;
+  top:178px;
+  width:223px;
+}
+.Box_65 {
+  background-color:#848484;
+  height:1px;
+  left:279px;
+  top:140px;
+  width:223px;
+}
+.Box_66 {
+  background-color:#848484;
+  height:1px;
+  left:279px;
+  top:102px;
+  width:223px;
+}
+.Box_67 {
+  background-color:#848484;
+  height:1px;
+  left:279px;
+  top:64px;
+  width:223px;
+}
+.Box_68 {
+  background-color:#848484;
+  height:1px;
+  left:50px;
+  top:178px;
+  width:223px;
+}
+.Box_69 {
+  background-color:#848484;
+  height:1px;
+  left:50px;
+  top:140px;
+  width:223px;
+}
+.Box_70 {
+  background-color:#848484;
+  height:1px;
+  left:50px;
+  top:102px;
+  width:223px;
+}
+.Box_71 {
+  background-color:#848484;
+  height:1px;
+  left:50px;
+  top:64px;
+  width:223px;
+}
+.FloatingImage_72 {
+  background-image:url('/resource/project/hp_footer_icon_facebook.png');
+  height:100px;
+  left:701px;
+  top:31px;
+  width:100px;
+}
+.FloatingImage_73 {
+  background-image:url('/resource/project/hp_footer_icon_youtube.png');
+  height:100px;
+  left:811px;
+  top:31px;
+  width:100px;
 }

@@ -1,0 +1,933 @@
+.iu-center-box {
+  width:960px;
+}
+.courses_home {
+  min-width:960px;
+}
+.Header {
+  background-color:#F7F7F7;
+  color:#333333;
+  height:228px;
+  min-width:960px;
+  position:relative;
+  width:100%;
+}
+.CenterBox_7 {
+  background-color:#FFFFFF;
+  background-position:center center;
+  background-size:100% 100%;
+  color:#000000;
+}
+.CenterBox_7.iux-hover, .CenterBox_7.iux-active {
+  color:#000000;
+}
+.box-925 {
+  height:26px;
+  left:0px;
+  margin-left:auto;
+  margin-right:auto;
+  right:0px;
+  top:196px;
+  width:734px;
+}
+.Text_50 {
+  color:#8A8A8A;
+  float:left;
+  font-family:'Helvetica', sans-serif;
+  font-size:14px;
+  font-weight:400;
+  height:25px;
+  margin-left:12px;
+  margin-top:0px;
+  position:relative;
+  width:82px;
+}
+.Text_47 {
+  color:#8A8A8A;
+  float:left;
+  font-family:'Helvetica', sans-serif;
+  font-size:14px;
+  height:25px;
+  margin-left:28px;
+  margin-top:0px;
+  position:relative;
+  width:80px;
+}
+.Text_22 {
+  color:#8A8A8A;
+  float:left;
+  font-family:'Helvetica', sans-serif;
+  font-size:14px;
+  height:25px;
+  margin-left:28px;
+  margin-top:0px;
+  position:relative;
+  width:52px;
+}
+.Text_23 {
+  color:#8A8A8A;
+  float:left;
+  font-family:'Helvetica', sans-serif;
+  font-size:14px;
+  height:25px;
+  margin-left:28px;
+  margin-top:0px;
+  position:relative;
+  width:132px;
+}
+.Text_24 {
+  color:#8A8A8A;
+  float:left;
+  font-family:'Helvetica', sans-serif;
+  font-size:14px;
+  height:25px;
+  margin-left:28px;
+  margin-top:0px;
+  position:relative;
+  width:68px;
+}
+.Text_26 {
+  color:#8A8A8A;
+  float:left;
+  font-family:'Helvetica', sans-serif;
+  font-size:14px;
+  height:25px;
+  margin-left:28px;
+  margin-top:0px;
+  position:relative;
+  width:52px;
+}
+.Text_27 {
+  color:#8A8A8A;
+  float:left;
+  font-family:'Helvetica', sans-serif;
+  font-size:14px;
+  height:25px;
+  margin-left:28px;
+  margin-top:0px;
+  position:relative;
+  width:88px;
+}
+.Text_28 {
+  color:#494949;
+  font-family:'Helvetica', sans-serif;
+  font-size:14px;
+  font-weight:700;
+  height:25px;
+  left:846px;
+  top:54px;
+  width:44px;
+}
+.Text_28.iux-hover, .Text_28.iux-active {
+  color:#EF8721;
+}
+.Text_242 {
+  color:#494949;
+  font-family:'Helvetica', sans-serif;
+  font-size:14px;
+  font-weight:700;
+  height:25px;
+  left:892px;
+  top:54px;
+  width:8px;
+}
+.Text_241 {
+  color:#494949;
+  font-family:'Helvetica', sans-serif;
+  font-size:14px;
+  font-weight:700;
+  height:25px;
+  left:904px;
+  top:54px;
+  width:49px;
+}
+.Text_241.iux-hover, .Text_241.iux-active {
+  color:#EF8721;
+}
+.FloatingImage {
+  background-image:url('/resource/project/dlab_logo.png');
+  background-position:center center;
+  background-size:contain;
+  height:102px;
+  left:0px;
+  margin-left:auto;
+  margin-right:auto;
+  right:0px;
+  top:66px;
+  width:276px;
+}
+.HTML_300 {
+  height:94px;
+  left:71px;
+  top:530px;
+  width:100px;
+}
+.Box_301 {
+  background-color:#EF8721;
+  background-position:center;
+  height:38px;
+  left:0px;
+  top:0px;
+  width:100%;
+}
+.text-447 {
+  color:#FFFFFF;
+  height:24px;
+  left:0px;
+  margin-left:auto;
+  margin-right:auto;
+  right:0px;
+  text-align:center;
+  top:7px;
+  width:549px;
+}
+.Image_302 {
+  background-image:url('/resource/project/text_label_ani_k.gif');
+  height:38px;
+  left:619px;
+  top:0px;
+  width:76px;
+}
+.PageContent {
+  background-color:#F7F7F7;
+}
+.Section {
+  height:660px;
+}
+.CenterBox {
+  background-color:#FFFFFF;
+}
+.Text_68 {
+  color:#605F5F;
+  font-family:'HelveticaNeue-Light','Helvetica Neue Light', sans-serif;
+  font-size:52px;
+  font-weight:700;
+  height:79px;
+  left:47px;
+  text-align:left;
+  top:13px;
+  width:442px;
+}
+.Text_69 {
+  font-family:'HelveticaNeue-Light','Helvetica Neue Light', sans-serif;
+  font-size:20px;
+  height:30px;
+  left:497px;
+  top:49px;
+  width:413px;
+}
+.FloatingImage_70.iux-hover, .FloatingImage_70.iux-active {
+  -ms-transform:scaleX(1.0) scaleY(1.0);
+  -webkit-transform:scaleX(1.0) scaleY(1.0);
+  opacity:0.70;
+  transform:scaleX(1.0) scaleY(1.0);
+}
+.FloatingImage_70 {
+  -webkit-transform:scaleX(1.0) scaleY(1.0);
+  -webkit-transition:opacity 0.0s;
+  background-image:url('/resource/project/hp_main_starter_2.jpg');
+  height:493px;
+  left:50px;
+  opacity:1;
+  top:123px;
+  transform:scaleX(1.0) scaleY(1.0);
+  transition:opacity 0.0s;
+  width:280px;
+}
+.FloatingImage_71 {
+  -webkit-transition:opacity 0.0s;
+  background-image:url('/resource/project/hp_main_creator_2.jpg');
+  height:493px;
+  left:340px;
+  opacity:1;
+  top:123px;
+  transition:opacity 0.0s;
+  width:280px;
+}
+.FloatingImage_71.iux-hover, .FloatingImage_71.iux-active {
+  opacity:0.70;
+}
+.FloatingImage_74.iux-hover, .FloatingImage_74.iux-active {
+  opacity:0.70;
+}
+.FloatingImage_74 {
+  -webkit-transition:opacity 0.0s;
+  background-image:url('/resource/project/hp_main_maker_2.jpg');
+  height:493px;
+  left:630px;
+  opacity:1;
+  top:123px;
+  transition:opacity 0.0s;
+  width:280px;
+}
+.Section_88 {
+  height:640px;
+}
+.CenterBox_88 {
+  background-color:#FFFFFF;
+}
+.Box_110 {
+  background-color:rgba(143,216,48,0.30);
+  height:40px;
+  left:50px;
+  top:204px;
+  width:280px;
+}
+.Box_88 {
+  background-color:#FF9B01;
+  border-width:0px;
+  height:40px;
+  left:50px;
+  top:524px;
+  width:280px;
+}
+.Text_115 {
+  color:#FFFFFF;
+  font-family:'Nanum Gothic', sans-serif;
+  font-size:14px;
+  font-weight:700;
+  height:28px;
+  left:0px;
+  text-align:center;
+  top:10px;
+  width:280px;
+}
+.Box_107 {
+  background-color:#FF9A01;
+  border-width:0px;
+  height:40px;
+  left:340px;
+  top:524px;
+  width:280px;
+}
+.Text_116 {
+  color:#FFFFFF;
+  font-family:'Nanum Gothic', sans-serif;
+  font-size:14px;
+  font-weight:700;
+  height:28px;
+  left:0px;
+  text-align:center;
+  top:10px;
+  width:280px;
+}
+.Box_109 {
+  background-color:#FF9A01;
+  border-width:0px;
+  height:40px;
+  left:630px;
+  top:524px;
+  width:280px;
+}
+.Text_117 {
+  color:#FFFFFF;
+  font-family:'Nanum Gothic', sans-serif;
+  font-size:14px;
+  font-weight:700;
+  height:28px;
+  left:0px;
+  text-align:center;
+  top:10px;
+  width:280px;
+}
+.Text_82 {
+  color:#EF8721;
+  font-family:'HelveticaNeue-Light','Helvetica Neue Light', sans-serif;
+  font-size:40px;
+  font-weight:400;
+  height:69px;
+  left:265px;
+  text-align:center;
+  top:24px;
+  width:464px;
+}
+.Box {
+  background-color:#8FD830;
+  height:54px;
+  left:50px;
+  top:110px;
+  width:280px;
+}
+.Text_101 {
+  color:#FFFFFF;
+  font-family:'Nanum Gothic', sans-serif;
+  font-size:20px;
+  font-weight:700;
+  height:34px;
+  left:0px;
+  text-align:center;
+  top:12px;
+  width:280px;
+}
+.Box_84 {
+  background-color:rgba(143,216,48,0.30);
+  height:40px;
+  left:50px;
+  top:284px;
+  width:280px;
+}
+.Box_95 {
+  background-color:rgba(132,197,235,0.30);
+  height:40px;
+  left:340px;
+  top:444px;
+  width:280px;
+}
+.Box_96 {
+  background-color:rgba(132,197,235,0.30);
+  height:40px;
+  left:340px;
+  top:364px;
+  width:280px;
+}
+.Box_97 {
+  background-color:rgba(132,197,235,0.30);
+  height:40px;
+  left:340px;
+  top:284px;
+  width:280px;
+}
+.Box_98 {
+  background-color:rgba(132,197,235,0.30);
+  height:40px;
+  left:340px;
+  top:204px;
+  width:280px;
+}
+.Box_99 {
+  background-color:#84C5EB;
+  height:54px;
+  left:340px;
+  top:110px;
+  width:280px;
+}
+.Text_102 {
+  color:#FFFFFF;
+  font-family:'Nanum Gothic', sans-serif;
+  font-size:20px;
+  font-weight:700;
+  height:34px;
+  left:0px;
+  text-align:center;
+  top:12px;
+  width:280px;
+}
+.Box_100 {
+  background-color:#F9B5CB;
+  height:54px;
+  left:630px;
+  top:110px;
+  width:280px;
+}
+.Text_103 {
+  color:#FFFFFF;
+  font-family:'Nanum Gothic', sans-serif;
+  font-size:20px;
+  font-weight:700;
+  height:34px;
+  left:0px;
+  text-align:center;
+  top:12px;
+  width:280px;
+}
+.Box_101 {
+  background-color:rgba(249,181,203,0.30);
+  height:40px;
+  left:630px;
+  top:204px;
+  width:280px;
+}
+.Box_102 {
+  background-color:rgba(249,181,203,0.30);
+  height:40px;
+  left:630px;
+  top:284px;
+  width:280px;
+}
+.Box_103 {
+  background-color:rgba(249,181,203,0.30);
+  height:40px;
+  left:630px;
+  top:364px;
+  width:280px;
+}
+.Box_104 {
+  background-color:rgba(249,181,203,0.30);
+  height:40px;
+  left:630px;
+  top:444px;
+  width:280px;
+}
+.Text_104 {
+  color:#929292;
+  font-family:'Nanum Gothic', sans-serif;
+  font-size:14px;
+  height:354px;
+  left:75px;
+  line-height:2.90;
+  text-align:left;
+  top:165px;
+  width:70px;
+}
+.Text_110 {
+  color:#585858;
+  font-family:'Nanum Gothic', sans-serif;
+  font-size:14px;
+  height:354px;
+  left:150px;
+  line-height:2.90;
+  text-align:left;
+  top:165px;
+  width:170px;
+}
+.Text_111 {
+  color:#929292;
+  font-family:'Nanum Gothic', sans-serif;
+  font-size:14px;
+  height:354px;
+  left:365px;
+  line-height:2.90;
+  text-align:left;
+  top:165px;
+  width:70px;
+}
+.Text_112 {
+  color:#585858;
+  font-family:'Nanum Gothic', sans-serif;
+  font-size:14px;
+  height:354px;
+  left:438px;
+  line-height:2.90;
+  text-align:left;
+  top:165px;
+  width:180px;
+}
+.Text_113 {
+  color:#929292;
+  font-family:'Nanum Gothic', sans-serif;
+  font-size:14px;
+  height:354px;
+  left:655px;
+  line-height:2.90;
+  text-align:left;
+  top:165px;
+  width:70px;
+}
+.Text_114 {
+  color:#585858;
+  font-family:'Nanum Gothic', sans-serif;
+  font-size:14px;
+  height:354px;
+  left:728px;
+  line-height:2.90;
+  text-align:left;
+  top:165px;
+  width:172px;
+}
+.Section_74 {
+  height:560px;
+}
+.CenterBox_74 {
+  background-color:#FFFFFF;
+}
+.Text_85 {
+  color:#EF8721;
+  font-family:'HelveticaNeue-Light','Helvetica Neue Light', sans-serif;
+  font-size:40px;
+  font-weight:400;
+  height:69px;
+  left:314px;
+  text-align:center;
+  top:24px;
+  width:333px;
+}
+.FloatingImage_76 {
+  background-image:url('/resource/project/hp_courses_diagram.png');
+  height:450px;
+  left:31px;
+  top:77px;
+  width:900px;
+}
+.Section_78 {
+  height:290px;
+}
+.CenterBox_78 {
+  background-color:#FFFFFF;
+}
+.FloatingImage_79.iux-hover, .FloatingImage_79.iux-active {
+  opacity:0.70;
+}
+.FloatingImage_79 {
+  -webkit-transition:opacity 0.0s;
+  background-image:url('/resource/project/hp_courses_icon_starter.png');
+  height:250px;
+  left:47px;
+  opacity:1;
+  top:21px;
+  transition:opacity 0.0s;
+  width:250px;
+}
+.Text_86 {
+  color:#585858;
+  font-family:'HelveticaNeue-Light','Helvetica Neue Light', sans-serif;
+  font-size:30px;
+  font-weight:700;
+  height:40px;
+  left:328px;
+  top:50px;
+  width:514px;
+}
+.Text_87 {
+  color:#EF8721;
+  font-family:'HelveticaNeue-Light','Helvetica Neue Light', sans-serif;
+  font-size:16px;
+  font-weight:700;
+  height:27px;
+  left:328px;
+  top:98px;
+  width:514px;
+}
+.Text_88 {
+  color:#585858;
+  font-family:'Nanum Gothic', sans-serif;
+  font-size:14px;
+  font-weight:300;
+  height:88px;
+  left:328px;
+  top:124px;
+  width:570px;
+}
+.Text_89 {
+  color:#585858;
+  font-family:'HelveticaNeue-Light','Helvetica Neue Light', sans-serif;
+  font-size:16px;
+  font-weight:700;
+  height:23px;
+  left:328px;
+  top:211px;
+  width:514px;
+}
+.Section_82 {
+  height:290px;
+}
+.CenterBox_82 {
+  background-color:#FFFFFF;
+}
+.FloatingImage_85.iux-hover, .FloatingImage_85.iux-active {
+  opacity:0.70;
+}
+.FloatingImage_85 {
+  -webkit-transition:opacity 0.0s;
+  background-image:url('/resource/project/hp_courses_icon_creator.png');
+  height:250px;
+  left:47px;
+  opacity:1;
+  top:21px;
+  transition:opacity 0.0s;
+  width:250px;
+}
+.Text_90 {
+  color:#585858;
+  font-family:'HelveticaNeue-Light','Helvetica Neue Light', sans-serif;
+  font-size:30px;
+  font-weight:700;
+  height:40px;
+  left:328px;
+  top:50px;
+  width:514px;
+}
+.Text_91 {
+  color:#EF8721;
+  font-family:'HelveticaNeue-Light','Helvetica Neue Light', sans-serif;
+  font-size:16px;
+  font-weight:700;
+  height:31px;
+  left:328px;
+  top:98px;
+  width:582px;
+}
+.Text_92 {
+  color:#585858;
+  font-family:'Nanum Gothic', sans-serif;
+  font-size:14px;
+  font-weight:300;
+  height:65px;
+  left:328px;
+  top:125px;
+  width:570px;
+}
+.Text_105 {
+  color:#585858;
+  font-family:'HelveticaNeue-Light','Helvetica Neue Light', sans-serif;
+  font-size:16px;
+  font-weight:700;
+  height:23px;
+  left:328px;
+  top:193px;
+  width:514px;
+}
+.Section_84 {
+  height:350px;
+}
+.CenterBox_84 {
+  background-color:#FFFFFF;
+}
+.FloatingImage_80 {
+  -webkit-transition:opacity 0.0s;
+  background-image:url('/resource/project/hp_courses_icon_maker.png');
+  height:250px;
+  left:47px;
+  opacity:1;
+  top:21px;
+  transition:opacity 0.0s;
+  width:250px;
+}
+.FloatingImage_80.iux-hover, .FloatingImage_80.iux-active {
+  opacity:0.70;
+}
+.Text_106 {
+  color:#585858;
+  font-family:'HelveticaNeue-Light','Helvetica Neue Light', sans-serif;
+  font-size:30px;
+  font-weight:700;
+  height:40px;
+  left:328px;
+  top:50px;
+  width:514px;
+}
+.Text_107 {
+  color:#EF8721;
+  font-family:'HelveticaNeue-Light','Helvetica Neue Light', sans-serif;
+  font-size:16px;
+  font-weight:700;
+  height:27px;
+  left:328px;
+  top:98px;
+  width:586px;
+}
+.Text_108 {
+  color:#585858;
+  font-family:'Nanum Gothic', sans-serif;
+  font-size:14px;
+  font-weight:300;
+  height:106px;
+  left:328px;
+  top:125px;
+  width:570px;
+}
+.Text_109 {
+  color:#585858;
+  font-family:'HelveticaNeue-Light','Helvetica Neue Light', sans-serif;
+  font-size:16px;
+  font-weight:700;
+  height:23px;
+  left:328px;
+  top:235px;
+  width:514px;
+}
+.Footer {
+  background-color:#F7F7F7;
+  height:274px;
+  position:relative;
+  width:100%;
+}
+.CenterBox_27 {
+  background-color:#242424;
+}
+.Text {
+  color:#848484;
+  font-family:'HelveticaNeue-Light','Helvetica Neue Light', sans-serif;
+  font-size:16px;
+  font-weight:400;
+  height:28px;
+  left:420px;
+  top:71px;
+  width:85px;
+}
+.Text_52 {
+  color:#848484;
+  font-family:'HelveticaNeue-Light','Helvetica Neue Light', sans-serif;
+  font-size:16px;
+  font-weight:400;
+  height:28px;
+  left:420px;
+  top:147px;
+  width:85px;
+}
+.Text_53 {
+  color:#848484;
+  font-family:'HelveticaNeue-Light','Helvetica Neue Light', sans-serif;
+  font-size:16px;
+  font-weight:400;
+  height:28px;
+  left:420px;
+  top:109px;
+  width:85px;
+}
+.Text_54 {
+  color:#848484;
+  font-family:'HelveticaNeue-Light','Helvetica Neue Light', sans-serif;
+  font-size:20px;
+  font-weight:400;
+  height:30px;
+  left:301px;
+  top:29px;
+  width:154px;
+}
+.Text_55 {
+  color:#848484;
+  font-family:'HelveticaNeue-Light','Helvetica Neue Light', sans-serif;
+  font-size:16px;
+  font-weight:400;
+  height:28px;
+  left:73px;
+  top:71px;
+  width:154px;
+}
+.Text_56 {
+  color:#848484;
+  font-family:'HelveticaNeue-Light','Helvetica Neue Light', sans-serif;
+  font-size:16px;
+  font-weight:400;
+  height:28px;
+  left:54px;
+  top:229px;
+  width:512px;
+}
+.Text_57 {
+  color:#848484;
+  font-family:'HelveticaNeue-Light','Helvetica Neue Light', sans-serif;
+  font-size:16px;
+  font-weight:400;
+  height:28px;
+  left:73px;
+  top:147px;
+  width:154px;
+}
+.Text_58 {
+  color:#848484;
+  font-family:'HelveticaNeue-Light','Helvetica Neue Light', sans-serif;
+  font-size:16px;
+  font-weight:400;
+  height:28px;
+  left:73px;
+  top:109px;
+  width:154px;
+}
+.Text_59 {
+  color:#848484;
+  font-family:'HelveticaNeue-Light','Helvetica Neue Light', sans-serif;
+  font-size:20px;
+  font-weight:400;
+  height:30px;
+  left:73px;
+  top:29px;
+  width:154px;
+}
+.Text_60 {
+  color:#848484;
+  font-family:'HelveticaNeue-Light','Helvetica Neue Light', sans-serif;
+  font-size:16px;
+  font-weight:400;
+  height:28px;
+  left:301px;
+  top:71px;
+  width:85px;
+}
+.Text_61 {
+  color:#848484;
+  font-family:'HelveticaNeue-Light','Helvetica Neue Light', sans-serif;
+  font-size:16px;
+  font-weight:400;
+  height:28px;
+  left:301px;
+  top:147px;
+  width:85px;
+}
+.Text_62 {
+  color:#848484;
+  font-family:'HelveticaNeue-Light','Helvetica Neue Light', sans-serif;
+  font-size:16px;
+  font-weight:400;
+  height:28px;
+  left:301px;
+  top:109px;
+  width:85px;
+}
+.Box_63 {
+  background-color:#848484;
+  height:1px;
+  left:50px;
+  top:211px;
+  width:858px;
+}
+.Box_64 {
+  background-color:#848484;
+  height:1px;
+  left:279px;
+  top:178px;
+  width:223px;
+}
+.Box_65 {
+  background-color:#848484;
+  height:1px;
+  left:279px;
+  top:140px;
+  width:223px;
+}
+.Box_66 {
+  background-color:#848484;
+  height:1px;
+  left:279px;
+  top:102px;
+  width:223px;
+}
+.Box_67 {
+  background-color:#848484;
+  height:1px;
+  left:279px;
+  top:64px;
+  width:223px;
+}
+.Box_68 {
+  background-color:#848484;
+  height:1px;
+  left:50px;
+  top:178px;
+  width:223px;
+}
+.Box_69 {
+  background-color:#848484;
+  height:1px;
+  left:50px;
+  top:140px;
+  width:223px;
+}
+.Box_70 {
+  background-color:#848484;
+  height:1px;
+  left:50px;
+  top:102px;
+  width:223px;
+}
+.Box_71 {
+  background-color:#848484;
+  height:1px;
+  left:50px;
+  top:64px;
+  width:223px;
+}
+.FloatingImage_72 {
+  background-image:url('/resource/project/hp_footer_icon_facebook.png');
+  height:100px;
+  left:701px;
+  top:31px;
+  width:100px;
+}
+.FloatingImage_73 {
+  background-image:url('/resource/project/hp_footer_icon_youtube.png');
+  height:100px;
+  left:811px;
+  top:31px;
+  width:100px;
+}

@@ -14,7 +14,7 @@ def apply_1(request):
         time = SemesterSubject.objects.filter(subject__name=request.GET.get('subject')).values("time")
     else:
         time = None
-    return render(request, 'pages/makerApply_1.html',
+    return render(request, 'pages/Apply//makerApply_1.html',
                   {'course': course, 'courseName': request.GET.get('course'),
                    'subject': subject, 'subjectName': request.GET.get('subject'),
                    'time': time, 'timeValue': request.GET.get('time')})
@@ -46,7 +46,7 @@ def apply_2(request):
 
     else:
         tmp = request.GET
-        return render(request, 'pages/makerApply_2.html',
+        return render(request, 'pages/Apply/makerApply_2.html',
                       {'course': tmp.get('course'), 'subject': tmp.get('subject'), 'time': tmp.get('time')})
 
 
@@ -54,7 +54,7 @@ def apply_2(request):
 def apply_3_1(request):
     tmp = request.GET
     child = ChildMember.objects.filter(memberName__memberName=request.user.memberName).values('childName')
-    return render(request, 'pages/makerApply_3_1.html',
+    return render(request, 'pages/Apply/makerApply_3_1.html',
                   {'member': request.user, 'course': tmp.get('course'), 'subject': tmp.get('subject'),
                    'time': tmp.get('time'), 'child': child, 'childName': child[0].get('childName')})
 
@@ -69,7 +69,7 @@ def apply_3_1_1(request):
         child.save()
         return JsonResponse({'subject': request.POST['subject'], 'time': request.POST['time']})
     else:
-        return render(request, 'pages/makerApply_3_1_1.html', {'subject': tmp.get('subject'), 'time': tmp.get('time')})
+        return render(request, 'pages/Apply/makerApply_3_1_1.html', {'subject': tmp.get('subject'), 'time': tmp.get('time')})
 
 
 @csrf_exempt
@@ -86,7 +86,7 @@ def apply_3_2(request):
         return JsonResponse(info)
     else:
         child = ChildMember.objects.filter(memberName__memberName=request.user.memberName).values('childName')
-        return render(request, 'pages/makerApply_3_2.html',
+        return render(request, 'pages/Apply/makerApply_3_2.html',
                       {'member': request.user, 'course': tmp.get('course'), 'subject': tmp.get('subject'),
                        'time': tmp.get('time'), 'child': child, 'childName': tmp.get('childName')})
 
@@ -116,7 +116,7 @@ def payment_result(request):
         return JsonResponse({'result': 'success'})
     else:
         tmp = request.GET
-        return render(request, 'pages/payment_result.html',
+        return render(request, 'pages/Apply/payment_result.html',
                       {'name': tmp.get('name'), 'applyNum': tmp.get('applyNum'), 'amount': tmp.get('amount'),
                        'childName': tmp.get('childName')})
 
